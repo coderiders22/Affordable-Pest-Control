@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Affordable Pest Services</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar-top bg-danger">
+            <div class="container">
+                <div class="d-flex justify-content-between topbar py-2">
+                    <div class="d-flex align-items-center flex-shrink-0 topbar-info">
+                        <a href="#" class="me-4 text-secondary">
+                            <i class="fas fa-map-marker-alt me-2 text-light"></i><span class="text-white">160 McFarlane Drive Minchinbury NSW 2770</span>
+                        </a>
+                        <a href="#" class="me-4 text-secondary">
+                            <i class="fas fa-phone-alt me-2 text-light"></i><span class="text-white">0434193057</span>
+                        </a>
+                        <a href="#" class="text-secondary">
+                            <i class="fas fa-envelope me-2 text-light"></i><span class="text-white">Harwinder Singh
+                            </span>
+                        </a>
+                    </div>
+                   
+                    <div class="d-flex align-items-center justify-content-center topbar-icon">
+                        <a href="#" class="me-4"><i class="fab fa-facebook-f text-dark"></i></a>
+                        <a href="#" class="me-4"><i class="fab fa-twitter text-dark"></i></a>
+                        <a href="#" class="me-4"><i class="fab fa-instagram text-dark"></i></a>
+                        <a href="#" class=""><i class="fab fa-linkedin-in text-dark"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-dark">
+            <div class="container">
+                <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="text-primary mb-0 display-5"><span class="text-red">Affordable<span class="text-white"> Pest Services</span><i class="fa fa-spider text-danger ms-2"></i></h1>
+                    </a>
+                    <button class="navbar-toggler custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-dark"></span>
+                    </button>
+                    <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto">
+                            <a href="index.html" class="nav-item nav-link ">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link active">Services</a>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link custom-button">Contact</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <script>
+            // Get the current page URL
+            const currentLocation = window.location.pathname;
+        
+            // Get all navbar links
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        
+            // Loop through the links and add the 'active' class to the current link
+            navLinks.forEach(link => {
+                if (link.href === window.location.href) {
+                    link.classList.add('active');
+                }
+            });
+        </script>
+        
+        <!-- Navbar End -->
+
+
+        
+       
+<!-- Services Start -->
+<div class="container-fluid services py-5" style="background-color: #000; color: #fff;">
+    <div class="container text-center py-5">
+        <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
+            <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Our Services</h5>
+            <h1 class="display-5">Common Pest Control Services</h1>
+        </div>
+        <div class="row g-5">
+            <!-- Service Item 1 -->
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
+                <div class="bg-danger rounded p-5 services-item">
+                    <div class="d-flex" style="align-items: center; justify-content: center;">
+                        <div class="mb-4 rounded-circle services-inner-icon">
+                            <i class="fa fa-spider fa-3x text-white"></i>
+                        </div>
+                    </div>
+                    <h4>Spiders</h4>
+                    <p class="fs-5">Effective control methods for various spider species.</p>
+                    <button type="button" class="btn btn-light border-0 rounded-pill px-4 py-3" data-bs-toggle="modal" data-bs-target="#spiderModal">Learn More</button>
+                </div>
+            </div>
+            <!-- Service Item 2 -->
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".5s">
+                <div class="bg-danger rounded p-5 services-item">
+                    <div class="d-flex" style="align-items: center; justify-content: center;">
+                        <div class="mb-4 rounded-circle services-inner-icon">
+                            <i class="fa fa-bug fa-3x text-white"></i>
+                        </div>
+                    </div>
+                    <h4>Mosquitos</h4>
+                    <p class="fs-5">Comprehensive treatments to reduce mosquito populations.</p>
+                    <button type="button" class="btn btn-light border-0 rounded-pill px-4 py-3" data-bs-toggle="modal" data-bs-target="#mosquitoModal">Learn More</button>
+                </div>
+            </div>
+            <!-- Service Item 3 -->
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".7s">
+                <div class="bg-danger rounded p-5 services-item">
+                    <div class="d-flex" style="align-items: center; justify-content: center;">
+                        <div class="mb-4 rounded-circle services-inner-icon">
+                            <i class="fa fa-mouse-pointer fa-3x text-white"></i>
+                        </div>
+                    </div>
+                    <h4>Rodents</h4>
+                    <p class="fs-5">Safe and effective rodent control solutions.</p>
+                    <button type="button" class="btn btn-light border-0 rounded-pill px-4 py-3" data-bs-toggle="modal" data-bs-target="#rodentModal">Learn More</button>
+                </div>
+            </div>
+            <!-- Service Item 4 -->
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".9s">
+                <div class="bg-danger rounded p-5 services-item">
+                    <div class="d-flex" style="align-items: center; justify-content: center;">
+                        <div class="mb-4 rounded-circle services-inner-icon">
+                            <i class="fa fa-termite fa-3x text-white"></i>
+                        </div>
+                    </div>
+                    <h4>Termites</h4>
+                    <p class="fs-5">Specialized treatments for termite infestations.</p>
+                    <button type="button" class="btn btn-light border-0 rounded-pill px-4 py-3" data-bs-toggle="modal" data-bs-target="#termiteModal">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary border-0 rounded-pill px-4 py-3 mt-4 wow fadeInUp" data-wow-delay=".3s">More Services</button>
+    </div>
+</div>
+<!-- Services End -->
+
+<!-- Modals Start -->
+<!-- Spider Modal -->
+<div class="modal fade" id="spiderModal" tabindex="-1" aria-labelledby="spiderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="spiderModalLabel">Spider Control Services</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>We offer comprehensive spider control services, including inspection, identification, and treatment to eliminate spider infestations effectively. Our experts use safe and effective methods tailored to your specific needs.</p>
+                <ul>
+                    <li>Thorough inspection and identification</li>
+                    <li>Customized treatment plans</li>
+                    <li>Preventative measures to keep spiders away</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mosquito Modal -->
+<div class="modal fade" id="mosquitoModal" tabindex="-1" aria-labelledby="mosquitoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mosquitoModalLabel">Mosquito Control Services</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Our mosquito control services include targeted treatments to reduce mosquito populations around your property, making your outdoor spaces enjoyable again.</p>
+                <ul>
+                    <li>Inspection and assessment of mosquito breeding sites</li>
+                    <li>Effective treatment solutions</li>
+                    <li>Ongoing monitoring and prevention strategies</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Rodent Modal -->
+<div class="modal fade" id="rodentModal" tabindex="-1" aria-labelledby="rodentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="rodentModalLabel">Rodent Control Services</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Our rodent control services ensure the safe removal of rodents from your property using humane and effective techniques.</p>
+                <ul>
+                    <li>Comprehensive property assessment</li>
+                    <li>Exclusion and prevention strategies</li>
+                    <li>Follow-up visits to ensure effectiveness</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Termite Modal -->
+<div class="modal fade" id="termiteModal" tabindex="-1" aria-labelledby="termiteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="termiteModalLabel">Termite Control Services</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>We provide specialized termite control services, including inspections, treatments, and prevention strategies to protect your property from termites.</p>
+                <ul>
+                    <li>Detailed termite inspections</li>
+                    <li>Effective treatment options</li>
+                    <li>Long-term prevention plans</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modals End -->
+
+
+      <!-- Footer Start -->
+      <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay=".3s">
+        <div class="container py-5">
+            <div class="row g-4 footer-inner">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="text-white fw-bold mb-4">About Affordable Pest Services.</h4>
+                        <p>Affordable Pest Services provides effective and budget-friendly pest control solutions across Australia. Our expert team specializes in residential and commercial pest management, including termite inspections and eco-friendly treatments.
+
+                            Committed to customer satisfaction and lasting results, we ensure a pest-free environment for your home or business. Contact us today to schedule your inspection!
+                            
+                            
+                            
+                            </p>
+                        <p class="mb-0"><a class="" href="#">Affordable Pest Services </a> &copy; 2023 All Right Reserved.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="text-white fw-bold mb-4">Usefull Link</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <a class="btn btn-link ps-0" href="about.html"><i class="fa fa-check me-2"></i>About Us</a>
+                            <a class="btn btn-link ps-0" href="contact.html"><i class="fa fa-check me-2"></i>Contact Us</a>
+                            <a class="btn btn-link ps-0" href="service.html"><i class="fa fa-check me-2"></i>Our Services</a>
+                            <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Terms & Condition</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="text-white fw-bold mb-4">Services Link</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>General Pest Control Spray</a>
+                            <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>German cockroaches treatment</a>
+                            <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Roof Fumigation</a>
+                            <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Bedbugs Treatment</a>
+                            <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Rat and Mouse Treatment</a>
+                            <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>End of lease Flea Treatment</a>
+                            <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Commercial Pest Control</a>
+
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="text-white fw-bold mb-4">Contact Us</h4>
+                        <a href="" class="btn btn-link w-100 text-start ps-0 pb-3 border-bottom rounded-0"><i class="fa fa-map-marker-alt me-3"></i>160 McFarlane Drive Minchinbury NSW 2770</a>
+                        <a href="" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-phone-alt me-3"></i>0434193057</a>
+                        <a href="" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-envelope me-3"></i>Harwinder Singh</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                        <a href="#" class="text-primary mb-0 display-6"> <span class="text-red">Affordable<span class="text-white">Pest Services</span><i class="fa fa-spider text-danger ms-2"></i></a>
+                    </div>
+                    <div class="col-md-4 copyright-btn text-center text-md-start mb-3 mb-md-0 flex-shrink-0">
+                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-md-4 my-auto text-center text-md-end text-white">
+ 
+                        Designed By <a class="border-bottom" href="https://webinorbit.com">WebInOrbit</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+        
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary rounded-circle border-3 back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
