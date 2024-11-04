@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Affordable Pest Services</title>
+        <title>Anti-Bugs Pest Management</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -72,8 +72,8 @@
         <nav class="navbar navbar-light navbar-expand-lg py-lg-0">
             <a href="index.html" class="navbar-brand">
                 <h1 class="text-danger mb-0 h3">
-                    <span class="text-dark">Affordable</span>
-                    <span class="text-danger">Pest Services</span>
+                    <span class="text-dark">Anti-Bugs</span>
+                    <span class="text-danger">Pest Management</span>
                     <img src="img/newlogo.png" alt="Spider Logo" class="ms-2" style="width: 40px; height: 40px;">
                 </h1>
             </a>
@@ -129,7 +129,7 @@
     <div class="container text-center py-5">
         <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
             <h5 class="mb-2 px-3 py-1 text-white rounded-pill d-inline-block border border-2" style="border-color: #ef0c0c;">Our Services</h5>
-            <h1 class="display-5" style="color: #ffffff;">Common Pest Control Services</h1>
+            <h1 class="display-5" style="color: #ffffff;">Common Anti-Bugs Pest Management Services</h1>
         </div>
         
         <div class="row g-5">
@@ -371,15 +371,15 @@
             <div class="row g-4 footer-inner">
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-item">
-                        <h4 class="text-white fw-bold mb-4">About Affordable Pest Services.</h4>
-                        <p>Affordable Pest Services provides effective and budget-friendly pest control solutions across Australia. Our expert team specializes in residential and commercial pest management, including termite inspections and eco-friendly treatments.
+                        <h4 class="text-white fw-bold mb-4">About Anti-Bugs Pest Management Services.</h4>
+                        <p>Anti-Bugs Pest Management Services. provides effective and budget-friendly pest control solutions across Australia. Our expert team specializes in residential and commercial pest management, including termite inspections and eco-friendly treatments.
 
                             Committed to customer satisfaction and lasting results, we ensure a pest-free environment for your home or business. Contact us today to schedule your inspection!
                             
                             
                             
                             </p>
-                        <p class="mb-0"><a class="" href="#">Affordable Pest Services </a> &copy; 2023 All Right Reserved.</p>
+                        <p class="mb-0"><a class="" href="#">Anti-Bugs Pest Management Services. </a> &copy; 2023 All Right Reserved.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -414,7 +414,7 @@
                         <h4 class="text-white fw-bold mb-4">Contact Us</h4>
                         <a href="" class="btn btn-link w-100 text-start ps-0 pb-3 border-bottom rounded-0"><i class="fa fa-map-marker-alt me-3"></i>160 McFarlane Drive Minchinbury NSW 2770</a>
                         <a href="" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-phone-alt me-3"></i>0434193057</a>
-                        <a href="" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-envelope me-3"></i>Harwinder Singh</a>
+                        <a href="" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-envelope me-3"></i>Harry</a>
                     </div>
                 </div>
             </div>
@@ -431,8 +431,8 @@
                     <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
                         <a href="index.html" class="navbar-brand">
                             <h1 class="text-danger mb-0 h3">
-                                <span class="text-dark">Affordable</span>
-                                <span class="text-danger">Pest Services</span>
+                                <span class="text-dark">Anti-Bugs</span>
+                                <span class="text-danger">Pest Management</span>
                                 <img src="img/newlogo.png" alt="Spider Logo" class="ms-2" style="width: 40px; height: 40px;">
                             </h1>
                         </a>
@@ -484,6 +484,62 @@
 
 </style>
 
+</style>
+
+<!-- CSS for Uniform Service Sizes and Loading Effect -->
+<style>
+    /* Ensure all service items are the same size */
+    .services-item {
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* Loading screen styling */
+    #loadingScreen {
+        display: none; /* Hidden by default */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9999;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #loadingScreen img {
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<!-- Loading Screen -->
+<div id="loadingScreen">
+    <img src="img/spider.gif" alt="Loading...">
+</div>
+
+<!-- JavaScript for Loading Effect -->
+<script>
+    // Show loading screen on page load
+    document.addEventListener("DOMContentLoaded", function() {
+        const loadingScreen = document.getElementById('loadingScreen');
+        loadingScreen.style.display = 'flex';
+        setTimeout(() => loadingScreen.style.display = 'none', 1500); // Hide after 1.5 seconds
+    });
+
+    // Show loading screen on page navigation
+    document.querySelectorAll('a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            if (this.href && this.href !== '#' && this.href !== window.location.href) {
+                const loadingScreen = document.getElementById('loadingScreen');
+                loadingScreen.style.display = 'flex';
+            }
+        });
+    });
+</script>
         
         <!-- JavaScript Libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
