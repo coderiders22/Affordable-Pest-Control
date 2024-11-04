@@ -9,6 +9,7 @@
         <meta content="" name="description">
 
         <!-- Google Web Fonts -->
+        <link rel="icon" type="image/x-icon" href="img/newlogo.png" >
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
@@ -66,42 +67,61 @@
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid bg-dark">
-        <div class="container">
-            <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="text-primary mb-0 display-5"><span class="text-red">Affordable<span class="text-white"> Pest Services</span><i class="fa fa-spider text-danger ms-2"></i></h1>
-                </a>
-                <button class="navbar-toggler custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars text-dark"></span>
-                </button>
-                <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link ">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link custom-button active">Contact</a>
+<div class="container-fluid bg-white">
+    <div class="container">
+        <nav class="navbar navbar-light navbar-expand-lg py-lg-0">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="text-danger mb-0 h3">
+                    <span class="text-dark">Affordable</span>
+                    <span class="text-danger">Pest Services</span>
+                    <img src="img/newlogo.png" alt="Spider Logo" class="ms-2" style="width: 40px; height: 40px;">
+                </h1>
+            </a>
+            <button class="navbar-toggler custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars text-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="index.html" class="nav-item nav-link text-dark ">Home</a>
+                    <a href="about.html" class="nav-item nav-link text-dark">About</a>
+                    <a href="service.html" class="nav-item nav-link text-dark">Services</a>
                 </div>
-            </nav>
-        </div>
+                <a href="contact.html" class="nav-item nav-link custom-button text-dark active">Contact</a>
+            </div>
+        </nav>
     </div>
-    
-    <script>
-        // Get the current page URL
-        const currentLocation = window.location.pathname;
-    
-        // Get all navbar links
-        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-    
-        // Loop through the links and add the 'active' class to the current link
+</div>
+<!-- Navbar End -->
+
+<style>
+    /* Hover Effect: Turn Navbar Links Red */
+    .navbar .nav-link:hover {
+        color: red !important;
+    }
+
+    /* Active State: Keep Link Red When Clicked */
+    .navbar .nav-link.active {
+        color: red !important;
+    }
+</style>
+
+<script>
+    // JavaScript to add the 'active' class to the clicked link
+    document.addEventListener('DOMContentLoaded', function () {
+        const navLinks = document.querySelectorAll('.navbar .nav-link');
+
         navLinks.forEach(link => {
-            if (link.href === window.location.href) {
-                link.classList.add('active');
-            }
+            link.addEventListener('click', function () {
+                // Remove 'active' from all links
+                navLinks.forEach(link => link.classList.remove('active'));
+                
+                // Add 'active' to the clicked link
+                this.classList.add('active');
+            });
         });
-    </script>
-    
+    });
+</script>
+
     <!-- Navbar End -->
 
 
@@ -110,94 +130,115 @@
 
 
         <!-- Contact Start -->
-        <div class="container-fluid py-5">
-            <div class="container py-5">
-                <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
-                    <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Get In Touch</h5>
-                    <h1 class="display-5 w-50 mx-auto">Contact for any query</h1>
+        <!-- Contact Start -->
+<div class="container-fluid py-5 bg-dark text-light">
+    <div class="container py-5">
+        <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
+            <h5 class="mb-2 px-3 py-1 text-light rounded-pill d-inline-block border border-2 border-danger">Get In Touch</h5>
+            <h1 class="display-5 w-50 mx-auto text-danger">Contact for Any Query</h1>
+        </div>
+        <div class="row g-5 mb-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                <div class="h-100">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001583.639214438!2d-78.4099249913019!3d42.71993723844549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1687175686342!5m2!1sen!2sbd" class="border-0 rounded w-100 h-100" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="row g-5 mb-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="h-100">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001583.639214438!2d-78.4099249913019!3d42.71993723844549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1687175686342!5m2!1sen!2sbd" class="border-0 rounded w-100 h-100" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
+                <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form" class="text-danger">Download Now</a>.</p>
+                <div class="rounded contact-form bg-light text-dark p-4">
+                    <div class="mb-4">
+                        <input type="text" class="form-control p-3 border-0" placeholder="Your Name">
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-						<p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                        <div class="rounded contact-form">
-                            <div class="mb-4">
-                                <input type="text" class="form-control p-3" placeholder="Your Name">
-                            </div>
-                            <div class="mb-4">
-                                <input type="email" class="form-control p-3" placeholder="Your Email">
-                            </div>
-                            <div class="mb-4">
-                                <input type="text" class="form-control p-3" placeholder="Subject">
-                            </div>
-                            <div class="mb-4">
-                                <textarea class="w-100 form-control p-3" rows="6" cols="10" placeholder="Message"></textarea>
-                            </div>
-                            <button class="btn btn-primary border-0 py-3 px-4 rounded-pill" type="button">Send Message</button>
-                        </div>
+                    <div class="mb-4">
+                        <input type="email" class="form-control p-3 border-0" placeholder="Your Email">
                     </div>
+                    <div class="mb-4">
+                        <select class="form-select p-3 border-0">
+                            <option value="Type Of Service">Type Of Service</option>
+                            <option value="Ants">Ants</option>
+                            <option value="Wasp & Bees">Wasp & Bees</option>
+                            <option value="Rodents">Rodents</option>
+                            <option value="Cockroaches">Cockroaches</option>
+                            <option value="Spiders">Spiders</option>
+                            <option value="Silverfish">Silverfish</option>
+                            <option value="Bed Bugs">Bed Bugs</option>
+                            <option value="Birds">Birds</option>
+                            <option value="Possum">Possum</option>
+                            <option value="Stored Product Pests">Stored Product Pests</option>
+                            <option value="Termites">Termites</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" class="form-control p-3 border-0" placeholder="Subject">
+                    </div>
+                    <div class="mb-4">
+                        <textarea class="form-control p-3 border-0" rows="6" placeholder="Message"></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <textarea class="form-control p-3 border-0" rows="6" placeholder="Address"></textarea>
+                    </div>
+                    <button class="btn btn-danger border-0 py-3 px-4 rounded-pill" type="button" onclick="window.location.href='contact.html'">Send Message</button>
                 </div>
-                <div class="row g-4 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
-                        <div class="d-flex bg-light p-3 rounded contact-btn-link">
-                            <div class="flex-shrink-0 d-flex align-items-center justify-content-center bg-primary rounded-circle p-3 ms-3" style="width: 64px; height: 64px;">
-                                <i class="fa fa-share text-dark"></i>
-                            </div>
-                            <div class="ms-3 contact-link">
-                                <h4 class="text-dark">fallow Us</h4>
-                                <div class="d-flex justify-content-center">
-                                    <a class="pe-2" href="#"><i class="fab fa-facebook-f text-dark"></i></a>
-                                    <a class="px-2" href="#"><i class="fab fa-twitter text-dark"></i></a>
-                                    <a class="px-2" href="#"><i class="fab fa-instagram text-dark"></i></a>
-                                    <a class="px-2" href="#"><i class="fab fa-linkedin-in text-dark"></i></a>
-                                    <a class="px-2" href="#"><i class="fab fa-youtube text-dark"></i></a>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+        </div>
+        <div class="row g-4 wow fadeInUp" data-wow-delay=".3s">
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="d-flex bg-light p-3 rounded contact-btn-link">
+                    <div class="d-flex align-items-center justify-content-center bg-danger rounded-circle p-3 ms-3" style="width: 64px; height: 64px;">
+                        <i class="fa fa-share text-light"></i>
                     </div>
-                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
-                        <div class="d-flex bg-light p-3 rounded contact-btn-link">
-                            <div class="d-flex align-items-center justify-content-center bg-primary rounded-circle p-3 ms-3" style="width: 64px; height: 64px;">
-                                <i class="fas fa-map-marker-alt text-dark"></i>
-                            </div>
-                            <div class="ms-3 contact-link">
-                                <h4 class="text-dark">Address</h4>
-                                <a href="#">
-                                    <h5 class="text-dark d-inline fs-6">123 Street, CA, USA</h5>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
-                        <div class="d-flex bg-light p-3 rounded contact-btn-link">
-                            <div class="d-flex align-items-center justify-content-center bg-primary rounded-circle p-3 ms-3" style="width: 64px; height: 64px;">
-                                <i class="fa fa-phone text-dark"></i>
-                            </div>
-                            <div class="ms-3 contact-link">
-                                <h4 class="text-dark">Call Us</h4>
-                                <a class="h5 text-dark fs-6" href="tel:+0123456789">+012 3456 7890</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
-                        <div class="d-flex bg-light p-3 rounded contact-btn-link">
-                            <div class="d-flex align-items-center justify-content-center bg-primary rounded-circle p-3 ms-3" style="width: 64px; height: 64px;">
-                                <i class="fa fa-envelope text-dark"></i>
-                            </div>
-                            <div class="ms-3 contact-link">
-                                <h4 class="text-dark">Email Us</h4>
-                                <a class="h5 text-dark fs-6" href="#">info@example.com</a>
-                            </div>
+                    <div class="ms-3 contact-link">
+                        <h4 class="text-dark">Follow Us</h4>
+                        <div class="d-flex">
+                            <a class="pe-2" href="#"><i class="fab fa-facebook-f text-dark"></i></a>
+                            <a class="px-2" href="#"><i class="fab fa-twitter text-dark"></i></a>
+                            <a class="px-2" href="#"><i class="fab fa-instagram text-dark"></i></a>
+                            <a class="px-2" href="#"><i class="fab fa-linkedin-in text-dark"></i></a>
+                            <a class="px-2" href="#"><i class="fab fa-youtube text-dark"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="d-flex bg-light p-3 rounded contact-btn-link">
+                    <div class="d-flex align-items-center justify-content-center bg-danger rounded-circle p-3 ms-3" style="width: 64px; height: 64px;">
+                        <i class="fas fa-map-marker-alt text-light"></i>
+                    </div>
+                    <div class="ms-3 contact-link">
+                        <h4 class="text-dark">Address</h4>
+                        <a href="#">
+                            <h5 class="text-dark d-inline fs-6">160 McFarlane Drive, Minchinbury NSW 2770</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="d-flex bg-light p-3 rounded contact-btn-link">
+                    <div class="d-flex align-items-center justify-content-center bg-danger rounded-circle p-3 ms-3" style="width: 64px; height: 64px;">
+                        <i class="fa fa-phone text-light"></i>
+                    </div>
+                    <div class="ms-3 contact-link">
+                        <h4 class="text-dark">Call Us</h4>
+                        <a class="h5 text-dark fs-6" href="tel:+0123456789">0434193057</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="d-flex bg-light p-3 rounded contact-btn-link">
+                    <div class="d-flex align-items-center justify-content-center bg-danger rounded-circle p-3 ms-3" style="width: 64px; height: 64px;">
+                        <i class="fa fa-envelope text-light"></i>
+                    </div>
+                    <div class="ms-3 contact-link">
+                        <h4 class="text-dark">Email Us</h4>
+                        <a class="h5 text-dark fs-6" href="#">Harwinder Singh</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Contact End -->
+    </div>
+</div>
+<!-- Contact End -->
+
 
 
         <!-- Footer Start -->
@@ -222,7 +263,7 @@
                                 <a class="btn btn-link ps-0" href="about.html"><i class="fa fa-check me-2"></i>About Us</a>
                                 <a class="btn btn-link ps-0" href="contact.html"><i class="fa fa-check me-2"></i>Contact Us</a>
                                 <a class="btn btn-link ps-0" href="service.html"><i class="fa fa-check me-2"></i>Our Services</a>
-                                <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Terms & Condition</a>
+
                             </div>
                         </div>
                     </div>
@@ -257,23 +298,41 @@
 
 
 
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright bg-dark py-4">
+         <!-- Copyright Start -->
+         <div class="container-fluid copyright bg-white py-4">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-                        <a href="#" class="text-primary mb-0 display-6"> <span class="text-red">Affordable<span class="text-white">Pest Services</span><i class="fa fa-spider text-danger ms-2"></i></a>
+                        <a href="index.html" class="navbar-brand">
+                            <h1 class="text-danger mb-0 h3">
+                                <span class="text-dark">Affordable</span>
+                                <span class="text-danger">Pest Services</span>
+                                <img src="img/newlogo.png" alt="Spider Logo" class="ms-2" style="width: 40px; height: 40px;">
+                            </h1>
+                        </a>
                     </div>
+         
+        
                     <div class="col-md-4 copyright-btn text-center text-md-start mb-3 mb-md-0 flex-shrink-0">
-                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <!-- Updated buttons with black and red theme -->
+                        <a class="btn btn-dark rounded-circle me-3 copyright-icon" href="" style="color: #ef0c0c;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="btn btn-dark rounded-circle me-3 copyright-icon" href="" style="color: #ef0c0c;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-dark rounded-circle me-3 copyright-icon" href="" style="color: #ef0c0c;">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a class="btn btn-dark rounded-circle me-3 copyright-icon" href="" style="color: #ef0c0c;">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
                     </div>
-                    <div class="col-md-4 my-auto text-center text-md-end text-white">
- 
-                        Designed By <a class="border-bottom" href="https://webinorbit.com">WebInOrbit</a>
+                    <div class="col-md-4 my-auto text-center text-md-end text-dark">
+                        <!-- Updated text color to black -->
+                        Designed By <a class="border-bottom text-danger" href="https://webinorbit.com">WebInOrbit</a>
                     </div>
+                    
                 </div>
                 </div>
             </div>
@@ -281,8 +340,23 @@
         <!-- Copyright End -->
         
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary rounded-circle border-3 back-to-top"><i class="fa fa-arrow-up"></i></a>
+     <!-- Back to Top -->
+<a href="#" class="btn rounded-circle back-to-top">
+    <i class="fa fa-arrow-up"></i>
+</a>
+<style>
+    .back-to-top {
+    background-color: #000000;  /* Black background */
+    border: 2px solid #ef0c0c;  /* Red border */
+    color: #ef0c0c;              /* Red arrow color */
+}
+
+.back-to-top i {
+    color: #ef0c0c;              /* Ensure the icon is red */
+}
+
+</style>
+
 
         
         <!-- JavaScript Libraries -->
