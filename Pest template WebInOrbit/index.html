@@ -46,54 +46,36 @@
 </div>
 <!-- Spinner End -->
 
-<!-- Topbar Start -->
-<div class="container-fluid topbar-top bg-danger">
-    <div class="container">
-        <div class="d-flex flex-column flex-md-row justify-content-between topbar py-2">
-            <div class="d-flex align-items-center flex-shrink-0 topbar-info mb-2 mb-md-0">
-                <a href="#" class="me-4 text-secondary">
-                    <i class="fas fa-map-marker-alt me-2 text-light"></i><span class="text-white">160 McFarlane Drive Minchinbury NSW 2770</span>
-                </a>
-                <a href="#" class="me-4 text-secondary">
-                    <i class="fas fa-phone-alt me-2 text-light"></i><span class="text-white">0434193057</span>
-                </a>
-                <a href="#" class="text-secondary">
-                    <i class="fas fa-envelope me-2 text-light"></i><span class="text-white">Harry</span>
-                </a>
-            </div>
-            <div class="d-flex align-items-center justify-content-center topbar-icon">
-                <a href="#" class="me-4"><i class="fab fa-facebook-f text-dark"></i></a>
-                <a href="#" class="me-4"><i class="fab fa-twitter text-dark"></i></a>
-                <a href="#" class="me-4"><i class="fab fa-instagram text-dark"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in text-dark"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Topbar End -->
 
 <!-- Navbar Start -->
 <div class="container-fluid bg-white">
     <div class="container">
         <nav class="navbar navbar-light navbar-expand-lg py-lg-0">
-            <a href="index.html" class="navbar-brand">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
                 <h1 class="text-danger mb-0 h3">
                     <span class="text-dark">Anti-Bugs</span>
                     <span class="text-danger">Pest Management</span>
-                    <img src="img/newlogo.png" alt="Spider Logo" class="ms-2" style="width: 40px; height: 40px;">
                 </h1>
+                <img src="img/newlogo.png" alt="Spider Logo" class="ms-2" style="width: 40px; height: 40px;">
             </a>
-            <button class="navbar-toggler custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button class="navbar-toggler custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="fa fa-bars text-dark"></span>
             </button>
-            <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto">
                     <a href="index.html" class="nav-item nav-link text-dark active">Home</a>
                     <a href="about.html" class="nav-item nav-link text-dark">About</a>
                     <a href="service.html" class="nav-item nav-link text-dark">Services</a>
                     <a href="gallery.html" class="nav-item nav-link text-dark">Gallery</a>
+                    <a href="contact.html" class="nav-item nav-link custom-button text-dark">Contact</a>
                 </div>
-                <a href="contact.html" class="nav-item nav-link custom-button text-dark">Contact</a>
+                <!-- Contact Info Section Start -->
+                <div class="d-none d-lg-flex align-items-center ms-4">
+                    <span class="d-inline-block text-dark me-3"><i class="fa fa-phone-alt"></i> +1 234 567 890</span>
+                    <span class="d-inline-block text-dark me-3"><i class="fa fa-envelope"></i> info@antibugspestmanagement.com.au</span>
+                    <span class="d-inline-block text-dark"><i class="fa fa-id-card"></i> LIC: 1234567890</span>
+                </div>
+                <!-- Contact Info Section End -->
             </div>
         </nav>
     </div>
@@ -142,7 +124,7 @@
             <div class="carousel-item active">
                 <div class="video-wrapper">
                     <video class="img-fluid w-100" autoplay muted loop>
-                        <source src="img/p11.mp4" type="video/mp4">
+                        <source src="img/video1.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -163,7 +145,7 @@
             <div class="carousel-item">
                 <div class="video-wrapper">
                     <video class="img-fluid w-100" autoplay muted loop>
-                        <source src="img/p22.mp4" type="video/mp4">
+                        <source src="img/video2.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -222,14 +204,14 @@
 
 
 <!-- About Start -->
-<div class="container-fluid py-5" style="background: linear-gradient(135deg, #000000 0%, #ef0c0c 100%);">
+<div class="container-fluid py-5" style="background: linear-gradient(135deg, #ffffff 0%, #f7f7f7 100%);">
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay=".3s">
                 <div class="about-img">
                     <div class="rotate-left bg-dark"></div>
                     <div class="rotate-right bg-dark"></div>
-                    <img src="img/about.jpg" class="img-fluid h-100" alt="About Us">
+                    <img src="img/Gallery/f.jpeg" class="img-fluid h-100" alt="About Us">
                     <div class="bg-white experiences">
                         <h1 class="display-3 text-danger">5</h1>
                         <h6 class="fw-bold">Years Of Experience</h6>
@@ -238,16 +220,16 @@
             </div>
             <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay=".6s">
                 <div class="about-item overflow-hidden">
-                    <h5 class="mb-2 px-3 py-1 text-white rounded-pill d-inline-block border border-2 border-danger">About Anti-Bugs Pest Management</h5>
-                    <h1 class="display-5 mb-2 text-white">Anti-Bugs Pest Management Services Since 2020</h1>
-                    <p class="fs-5 text-light" style="text-align: justify;">At Anti-Bugs Pest Management, we pride ourselves on delivering exceptional pest control solutions that fit your budget. With over 5 years of experience, our dedicated team is committed to ensuring your home and business remain pest-free. We use effective and safe methods tailored to your needs, making pest management hassle-free.</p>
+                    <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-danger">About Anti-Bugs Pest Management</h5>
+                    <h1 class="display-5 mb-2 text-dark">Anti-Bugs Pest Management Since 2020</h1>
+                    <p class="fs-5 text-dark" style="text-align: justify;">At Anti-Bugs Pest Management, we pride ourselves on delivering exceptional pest control solutions that fit your budget. With over 5 years of experience, our dedicated team is committed to ensuring your home and business remain pest-free. We use effective and safe methods tailored to your needs, making pest management hassle-free.</p>
                     <div class="row">
                         <div class="col-6 col-md-3 mb-3">
                             <div class="text-center">
                                 <div class="p-4 bg-danger rounded d-flex" style="align-items: center; justify-content: center;">
-                                    <i class="fas fa-city fa-4x text-white"></i>
+                                    <i class="fas fa-city fa-4x text-dark"></i>
                                 </div>
-                                <div class="my-2 text-light">
+                                <div class="my-2 text-dark">
                                     <h5>Residential</h5>
                                     <h5>Pest Control</h5>
                                 </div>
@@ -256,9 +238,9 @@
                         <div class="col-6 col-md-3 mb-3">
                             <div class="text-center">
                                 <div class="p-4 bg-danger rounded d-flex" style="align-items: center; justify-content: center;">
-                                    <i class="fas fa-briefcase fa-4x text-white"></i>
+                                    <i class="fas fa-briefcase fa-4x text-dark"></i>
                                 </div>
-                                <div class="my-2 text-light">
+                                <div class="my-2 text-dark">
                                     <h5>Commercial</h5>
                                     <h5>Pest Control</h5>
                                 </div>
@@ -267,9 +249,9 @@
                         <div class="col-6 col-md-3 mb-3">
                             <div class="text-center">
                                 <div class="p-4 bg-danger rounded d-flex" style="align-items: center; justify-content: center;">
-                                    <i class="fas fa-bug fa-4x text-white"></i>
+                                    <i class="fas fa-bug fa-4x text-dark"></i>
                                 </div>
-                                <div class="my-2 text-light">
+                                <div class="my-2 text-dark">
                                     <h5>Termite</h5>
                                     <h5>Extermination</h5>
                                 </div>
@@ -278,9 +260,9 @@
                         <div class="col-6 col-md-3 mb-3">
                             <div class="text-center">
                                 <div class="p-4 bg-danger rounded d-flex" style="align-items: center; justify-content: center;">
-                                    <i class="fas fa-user-shield fa-4x text-white"></i>
+                                    <i class="fas fa-user-shield fa-4x text-dark"></i>
                                 </div>
-                                <div class="my-2 text-light">
+                                <div class="my-2 text-dark">
                                     <h5>Expert</h5>
                                     <h5>Advice</h5>
                                 </div>
@@ -288,417 +270,136 @@
                         </div>
                     </div>
                     <button type="button" class="btn btn-danger border-0 rounded-pill px-4 py-3 mt-5" onclick="window.location.href='service.html'">Find Services</button>
-
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- About End -->
-<style>
-    /* CSS to remove extra white space */
-.carousel {
-    margin-bottom: 0 !important; /* Remove any bottom margin */
-}
 
-.about-section {
-    margin-top: 0 !important; /* Remove top margin from the About section */
-}
 
-/* Ensure the carousel and the About section align properly */
-.container-fluid {
-    padding-bottom: 0!important;/* Adjust to reduce padding */
-  
-}
+     <!-- Services Start -->
+<div class="container-fluid services py-5" style="background-color: #000000;">
+    <div class="container text-center py-5">
+        <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
+            <h5 class="mb-2 px-3 py-1 rounded-pill d-inline-block border border-2" style="border-color: #3b3a3a; color: #000000;">
+                Our Services
+            </h5>
+            <h1 class="display-5" style="color: #000000;">Common Anti-Bugs Pest Management Services</h1>
+        </div>
 
-/* If using Bootstrap's utility classes */
-.carousel-item {
-    padding-bottom: 0; /* Optional: Ensure carousel items have no padding */
-}
-
-</style>
-
-       <!-- Services Start -->
-       <div class="container-fluid services py-5" style="background-color: #333333; color: #ffffff;">
-        <div class="container text-center py-5">
-            <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
-                <h5 class="mb-2 px-3 py-1 text-white rounded-pill d-inline-block border border-2" style="border-color: #ef0c0c;">Our Services</h5>
-                <h1 class="display-5" style="color: #ffffff;">Common Anti-Bugs Pest Management Services</h1>
-            </div>
-    
-            <div class="row g-5 d-flex">
-                <!-- Service Item 1 -->
-                <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="bg-danger rounded p-5 h-100 services-item">
-                        <div class="d-flex" style="align-items: center; justify-content: center;">
-                            <div class="service-gif mb-3">
-                                <img src="img/spider.gif" alt="Rodents" class="img-fluid rounded-circle">
-                            </div>
-                        </div>
-                        <h4>Spiders</h4>
-                        <p class="fs-5">Effective control methods for various spider species.</p>
-                        <button type="button" class="btn btn-light border-0 rounded-pill px-4 py-3" data-bs-toggle="modal" data-bs-target="#spiderModal">Learn More</button>
-                    </div>
-                </div>
-            <!-- Service Item 2 -->
-            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".5s">
-                <div class="bg-danger rounded p-5 h-100 services-item">
+        <div class="row g-5 d-flex">
+            <!-- Service Item 1 -->
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
+                <div class="bg-light rounded p-5 h-100 services-item" style="border: 1px solid #ef0c0c;">
                     <div class="d-flex" style="align-items: center; justify-content: center;">
                         <div class="service-gif mb-3">
-                            <img src="img/mosquitos.png" alt="Rodents" class="img-fluid rounded-circle">
+                            <img src="img/spider.jpg" alt="Spiders" class="img-fluid rounded-circle">
                         </div>
                     </div>
-                    <h4>Mosquitos</h4>
-                    <p class="fs-5">Comprehensive treatments to reduce mosquito populations.</p>
-                    <button type="button" class="btn btn-light border-0 rounded-pill px-4 py-3" data-bs-toggle="modal" data-bs-target="#mosquitoModal">Learn More</button>
+                    <h4 style="color: #000000;">Spiders</h4>
+                    <p class="fs-5" style="color: #666666;">Effective control methods for various spider species.</p>
+                    <a href="spiders.html" class="btn btn-danger border-0 rounded-pill px-4 py-3">Learn More</a>
+                </div>
+            </div>
+            <!-- Service Item 2 -->
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".5s">
+                <div class="bg-light rounded p-5 h-100 services-item" style="border: 1px solid #ef0c0c;">
+                    <div class="d-flex" style="align-items: center; justify-content: center;">
+                        <div class="service-gif mb-3">
+                            <img src="img/mosquito.jpg" alt="Mosquitos" class="img-fluid rounded-circle">
+                        </div>
+                    </div>
+                    <h4 style="color: #000000;">Mosquitos</h4>
+                    <p class="fs-5" style="color: #666666;">Comprehensive treatments to reduce mosquito populations.</p>
+                    <a href="mosquitos.html" class="btn btn-danger border-0 rounded-pill px-4 py-3">Learn More</a>
                 </div>
             </div>
             <!-- Service Item 3 -->
             <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".7s">
-                <div class="bg-danger rounded p-5 h-100 services-item">
+                <div class="bg-light rounded p-5 h-100 services-item" style="border: 1px solid #ef0c0c;">
                     <div class="d-flex" style="align-items: center; justify-content: center;">
                         <div class="service-gif mb-3">
-                            <img src="img/rat.png" alt="Rodents" class="img-fluid rounded-circle">
+                            <img src="img/rodents.jpg" alt="Rodents" class="img-fluid rounded-circle">
                         </div>
                     </div>
-                    <h4>Rodents</h4>
-                    <p class="fs-5">Safe and effective rodent control solutions.</p>
-                    <button type="button" class="btn btn-light border-0 rounded-pill px-4 py-3" data-bs-toggle="modal" data-bs-target="#rodentModal">Learn More</button>
+                    <h4 style="color: #000000;">Rodents</h4>
+                    <p class="fs-5" style="color: #666666;">Safe and effective rodent control solutions.</p>
+                    <a href="rodents.html" class="btn btn-danger border-0 rounded-pill px-4 py-3">Learn More</a>
                 </div>
             </div>
-            <!-- Bees & Wasps Service -->
+            <!-- Service Item 4 -->
             <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.1s">
-                <div class="bg-danger rounded p-5 h-100 services-item">
+                <div class="bg-light rounded p-5 h-100 services-item" style="border: 1px solid #ef0c0c;">
                     <div class="d-flex" style="align-items: center; justify-content: center;">
                         <div class="service-gif mb-3">
                             <img src="img/beees.jpg" alt="Bees & Wasps" class="img-fluid rounded-circle">
                         </div>
                     </div>
-                    <h4>Bees & Wasps</h4>
-                    <p class="fs-5">Safe removal and control of bees and wasps from your property.</p>
-                    <button type="button" class="btn btn-light border-0 rounded-pill px-4 py-3" data-bs-toggle="modal" data-bs-target="#beesWaspsModal">Learn More</button>
+                    <h4 style="color: #0e0e0e;">Bees & Wasps</h4>
+                    <p class="fs-5" style="color: #666666;">Safe removal and control of bees and wasps from your property.</p>
+                    <a href="Bees & Wasps.html" class="btn btn-danger border-0 rounded-pill px-4 py-3">Learn More</a>
                 </div>
             </div>
-
-
-<!-- Cockroach Control Service -->
-<div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.1s">
-    <div class="bg-danger rounded p-5 h-100 services-item">
-        <div class="d-flex" style="align-items: center; justify-content: center;">
-            <div class="service-gif mb-3">
-                <img src="img/roch.jpg" alt="Cockroach Control" class="img-fluid rounded-circle">
+            <!-- Service Item 5 -->
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.1s">
+                <div class="bg-light rounded p-5 h-100 services-item" style="border: 1px solid #ef0c0c;">
+                    <div class="d-flex" style="align-items: center; justify-content: center;">
+                        <div class="service-gif mb-3">
+                            <img src="img/cockroach.jpg" alt="Cockroaches" class="img-fluid rounded-circle">
+                        </div>
+                    </div>
+                    <h4 style="color: #000000;">Cockroaches</h4>
+                    <p class="fs-5" style="color: #666666;">Effective elimination and prevention of cockroach infestations in your home.</p>
+                    <a href="Cockroach.html" class="btn btn-danger border-0 rounded-pill px-4 py-3">Learn More</a>
+                </div>
             </div>
-        </div>
-        <h4>Cockroaches</h4>
-        <p class="fs-5">Effective elimination and prevention of cockroach infestations in your home.</p>
-        <button type="button" class="btn btn-light border-0 rounded-pill px-4 py-3" data-bs-toggle="modal" data-bs-target="#cockroachModal">Learn More</button>
-    </div>
-</div>
-
-            <!-- Ants Service -->
+            <!-- Service Item 6 -->
             <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.3s">
-                <div class="bg-danger rounded p-5 h-100 services-item">
+                <div class="bg-light rounded p-5 h-100 services-item" style="border: 1px solid #ef0c0c;">
                     <div class="d-flex" style="align-items: center; justify-content: center;">
                         <div class="service-gif mb-3">
-                            <img src="img/ants-927_256.gif" alt="Ants" class="img-fluid rounded-circle">
+                            <img src="img/ant.webp" alt="Ants" class="img-fluid rounded-circle">
                         </div>
                     </div>
-                    <h4>Ants</h4>
-                    <p class="fs-5">Effective treatments to eliminate ants from your property.</p>
-                    <button type="button" class="btn btn-light border-0 rounded-pill px-4 py-3" data-bs-toggle="modal" data-bs-target="#antsModal">Learn More</button>
+                    <h4 style="color: #000000;">Ants</h4>
+                    <p class="fs-5" style="color: #666666;">Effective treatments to eliminate ants from your property.</p>
+                    <a href="ants.html" class="btn btn-danger border-0 rounded-pill px-4 py-3">Learn More</a>
                 </div>
             </div>
-            <!-- Service Item 4 -->
+            <!-- Service Item 7 -->
             <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".9s">
-                <div class="bg-danger rounded p-5 h-100  services-item">
+                <div class="bg-light rounded p-5 h-100 services-item" style="border: 1px solid #ef0c0c;">
                     <div class="d-flex" style="align-items: center; justify-content: center;">
                         <div class="service-gif mb-3">
-                            <img src="img/termites.png" alt="Rodents" class="img-fluid rounded-circle">
+                            <img src="img/termites.jpg" alt="Termites" class="img-fluid rounded-circle">
                         </div>
                     </div>
-                    <h4>Termites</h4>
-                    <p class="fs-5">Specialized treatments for termite infestations.</p>
-                    <button type="button" class="btn btn-light border-0 rounded-pill px-4 py-3" data-bs-toggle="modal" data-bs-target="#termiteModal">Learn More</button>
+                    <h4 style="color: #000000;">Termites</h4>
+                    <p class="fs-5" style="color: #666666;">Specialized treatments for termite infestations.</p>
+                    <a href="Termites.html" class="btn btn-danger border-0 rounded-pill px-4 py-3">Learn More</a>
                 </div>
             </div>
-            <!-- Bed Bugs Control Service -->
-<div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.5s">
-    <div class="bg-danger rounded p-5 h-100 services-item">
-        <div class="d-flex" style="align-items: center; justify-content: center;">
-            <div class="service-gif mb-3">
-                <img src="img/bedbugs.png" alt="Bed Bugs" class="img-fluid rounded-circle">
+            <!-- Service Item 8 -->
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.5s">
+                <div class="bg-light rounded p-5 h-100 services-item" style="border: 1px solid #ef0c0c;">
+                    <div class="d-flex" style="align-items: center; justify-content: center;">
+                        <div class="service-gif mb-3">
+                            <img src="img/Bedbug.jpg" alt="Bed Bugs" class="img-fluid rounded-circle">
+                        </div>
+                    </div>
+                    <h4 style="color: #000000;">Bed Bugs</h4>
+                    <p class="fs-5" style="color: #666666;">Comprehensive treatments to eliminate bed bugs from your home.</p>
+                    <a href="bedbugs.html" class="btn btn-danger border-0 rounded-pill px-4 py-3">Learn More</a>
+                </div>
             </div>
         </div>
-        <h4>Bed Bugs</h4>
-        <p class="fs-5">Comprehensive solutions to eliminate bed bugs and keep your home pest-free.</p>
-        <button type="button" class="btn btn-light border-0 rounded-pill px-4 py-3" data-bs-toggle="modal" data-bs-target="#bedBugsModal">Learn More</button>
     </div>
 </div>
-
-        </div>
-
-    </div>
-</div>
-
 <!-- Services End -->
 
 
 
-
-<!-- Modals Start -->
-
-<!-- Bees & Wasps Modal -->
-<div class="modal fade" id="beesWaspsModal" tabindex="-1" aria-labelledby="beesWaspsModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="beesWaspsModalLabel">Bees & Wasps Control Services</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Our expert team provides safe and humane removal and control of bees and wasps, ensuring your property is free from these stinging pests.</p>
-                <ul>
-                    <li>Thorough inspection and identification</li>
-                    <li>Customized treatment plans</li>
-                    <li>Prevention and monitoring strategies</li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <a href="contact.html" class="btn">Contact Us</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Cockroaches Modal -->
-<div class="modal fade" id="cockroachModal" tabindex="-1" aria-labelledby="cockroachModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="cockroachModalLabel">Cockroach Control Services</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Our expert team specializes in the effective elimination and prevention of cockroach infestations, ensuring a clean and safe environment for you and your family.</p>
-                <ul>
-                    <li>Detailed inspection and assessment of infestation</li>
-                    <li>Customized treatment plans tailored to your needs</li>
-                    <li>Long-term prevention strategies and monitoring</li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <a href="contact.html" class="btn">Contact Us</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Ants Modal -->
-<div class="modal fade" id="antsModal" tabindex="-1" aria-labelledby="antsModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="antsModalLabel">Ant Control Services</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Our ant control services include targeted treatments to eliminate ant infestations and prevent their return.</p>
-                <ul>
-                    <li>Inspection and assessment of ant colonies</li>
-                    <li>Effective treatment solutions</li>
-                    <li>Ongoing monitoring and prevention strategies</li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <a href="contact.html" class="btn">Contact Us</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Spider Modal -->
-<div class="modal fade" id="spiderModal" tabindex="-1" aria-labelledby="spiderModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="spiderModalLabel">Spider Control Services</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>We offer comprehensive spider control services, including inspection, identification, and treatment to eliminate spider infestations effectively. Our experts use safe and effective methods tailored to your specific needs.</p>
-                <ul>
-                    <li>Thorough inspection and identification</li>
-                    <li>Customized treatment plans</li>
-                    <li>Preventative measures to keep spiders away</li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <a href="contact.html" class="btn">Contact Us</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Mosquito Modal -->
-<div class="modal fade" id="mosquitoModal" tabindex="-1" aria-labelledby="mosquitoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="mosquitoModalLabel">Mosquito Control Services</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Our mosquito control services include targeted treatments to reduce mosquito populations around your property, making your outdoor spaces enjoyable again.</p>
-                <ul>
-                    <li>Inspection and assessment of mosquito breeding sites</li>
-                    <li>Effective treatment solutions</li>
-                    <li>Ongoing monitoring and prevention strategies</li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <a href="contact.html" class="btn">Contact Us</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Rodent Modal -->
-<div class="modal fade" id="rodentModal" tabindex="-1" aria-labelledby="rodentModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="rodentModalLabel">Rodent Control Services</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Our rodent control services ensure the safe removal of rodents from your property using humane and effective techniques.</p>
-                <ul>
-                    <li>Comprehensive property assessment</li>
-                    <li>Exclusion and prevention strategies</li>
-                    <li>Follow-up visits to ensure effectiveness</li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <a href="contact.html" class="btn">Contact Us</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- Termite Modal -->
-<div class="modal fade" id="termiteModal" tabindex="-1" aria-labelledby="termiteModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="termiteModalLabel">Termite Control Services</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>We provide specialized termite control services, including inspections, treatments, and prevention strategies to protect your property from termites.</p>
-                <ul>
-                    <li>Detailed termite inspections</li>
-                    <li>Effective treatment options</li>
-                    <li>Long-term prevention plans</li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <a href="contact.html" class="btn">Contact Us</a>
-            </div>
-        </div>
-    </div>
-    
-</div>
-<!-- Bed Bugs Modal -->
-<div class="modal fade" id="bedBugsModal" tabindex="-1" aria-labelledby="bedBugsModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="bedBugsModalLabel">Bed Bugs Control Services</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Our bed bug control services are designed to eliminate these pests from your home and prevent future infestations. Our experts use proven, safe, and effective methods.</p>
-                <ul>
-                    <li>Detailed inspection and identification of affected areas</li>
-                    <li>Customized treatment plans for effective eradication</li>
-                    <li>Follow-up inspections and preventative advice</li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <a href="contact.html" class="btn">Contact Us</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<style>
-    .modal-content {
-        background-color: #1a1a1a;
-        color: #ffffff;
-        border: 2px solid #ef0c0c;
-        border-radius: 10px;
-        box-shadow: 0 0 15px rgba(239, 12, 12, 0.6);
-    }
-    .modal-header {
-        background-color: #ef0c0c;
-        color: #ffffff;
-        border-bottom: 2px solid #1a1a1a;
-    }
-    .modal-title {
-        font-size: 1.8rem;
-        font-weight: bold;
-    }
-    .btn-close {
-        color: #ffffff;
-        background-color: transparent;
-    }
-    .modal-body {
-        padding: 20px;
-    }
-    .modal-body p {
-        font-size: 1.1rem;
-        line-height: 1.5;
-        margin-bottom: 15px;
-    }
-    .modal-body ul {
-        list-style: disc;
-        padding-left: 20px;
-        margin-top: 10px;
-    }
-    .modal-body ul li {
-        font-size: 1rem;
-        margin-bottom: 5px;
-    }
-    .modal-footer {
-        background-color: #1a1a1a;
-        border-top: 2px solid #ef0c0c;
-        text-align: center;
-    }
-    .modal-footer .btn {
-        background-color: #ef0c0c;
-        color: #ffffff;
-        border-radius: 50px;
-        padding: 10px 20px;
-        font-size: 1rem;
-        transition: background-color 0.3s;
-    }
-    .modal-footer .btn:hover {
-        background-color: #b50a0a;
-    }
-    /* Add this CSS to your styles */
-.container-fluid {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-}
-
-.py-5 {
-    padding-top: 2rem !important; /* Adjust to your preferred value */
-    padding-bottom: 2rem !important; /* Adjust to your preferred value */
-}
-
-</style>
 
 <!-- CSS for Uniform Service Sizes and Loading Effect -->
 <style>
@@ -708,6 +409,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        color: #ffffff;
     }
 
     /* Loading screen styling */
