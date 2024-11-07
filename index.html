@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Anti-Bugs Pest Management</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="icon" type="image/x-icon" href="img/newlogo.png" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- jQuery (for Bootstrap 4) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+<div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+</div>
+<!-- Spinner End -->
+
+
+<!-- Navbar Start -->
+<div class="container-fluid bg-white">
+    <div class="container">
+        <nav class="navbar navbar-light navbar-expand-lg py-lg-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+              
+                <img src="img/logo11.png" alt="Spider Logo" class="ms-2" style="width: 350px; height: 70px;">
+            </a>
+            <button class="navbar-toggler custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars text-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="index.html" class="nav-item nav-link text-dark active">Home</a>
+                    <a href="about.html" class="nav-item nav-link text-dark">About</a>
+                    <a href="service.html" class="nav-item nav-link text-dark">Services</a>
+                    <a href="gallery.html" class="nav-item nav-link text-dark">Gallery</a>
+                    <a href="contact.html" class="nav-item nav-link custom-button text-dark">Contact</a>
+                </div>
+                <!-- Contact Info Section Start -->
+                <div class="d-none d-lg-flex align-items-center ms-4">
+                    <span class="d-inline-block text-dark me-3"><i class="fa fa-phone-alt"></i>0434193057</span>
+                    <span class="d-inline-block text-dark me-3"><i class="fa fa-envelope"></i> info@antibugspestmanagement.com.au</span>
+ 
+                </div>
+                <!-- Contact Info Section End -->
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+
+<style>
+    /* Hover Effect: Turn Navbar Links Red */
+    .navbar .nav-link:hover {
+        color: red !important;
+    }
+
+    /* Active State: Keep Link Red When Clicked */
+    .navbar .nav-link.active {
+        color: red !important;
+    }
+</style>
+
+<script>
+    // JavaScript to add the 'active' class to the clicked link
+    document.addEventListener('DOMContentLoaded', function () {
+        const navLinks = document.querySelectorAll('.navbar .nav-link');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                // Remove 'active' from all links
+                navLinks.forEach(link => link.classList.remove('active'));
+                
+                // Add 'active' to the clicked link
+                this.classList.add('active');
+            });
+        });
+    });
+</script>
+
+
+<!-- Carousel Start -->
+<div class="container-fluid carousel px-0 mb-5 pb-5">
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div class="video-wrapper">
+                    <video class="img-fluid w-100" autoplay muted loop>
+                        <source src="img/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="carousel-caption">
+                    <div class="container carousel-content">
+                        <h4 class="text-white mb-4 animated slideInDown d-none d-lg-block">Anti-Bugs Pest Management Solutions</h4>
+                        <h1 class="text-white display-1 mb-4 animated slideInDown">Protecting Your Home Without Breaking the Bank</h1>
+                        <a href="contact.html" class="me-2">
+                            <button type="button" 
+                                    class="px-5 btn border-2 rounded-pill animated slideInDown" 
+                                    style="color: red; background-color: black; padding: 0.4rem 1.5rem; font-size: 0.9rem; border-radius: 30px;">
+                                Schedule Your Inspection
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="video-wrapper">
+                    <video class="img-fluid w-100" autoplay muted loop>
+                        <source src="img/video2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="carousel-caption">
+                    <div class="container carousel-content">
+                        <h4 class="text-white mb-4 animated slideInDown d-none d-lg-block">Quality Pest Control at Affordable Prices</h4>
+                        <h1 class="text-white display-1 mb-4 animated slideInDown">Safe, Effective, and Budget-Friendly Services</h1>
+                        <a href="contact.html" class="me-2">
+                            <button type="button" 
+                                    class="px-5 btn border-2 rounded-pill animated slideInDown" 
+                                    style="color: red; background-color: black; padding: 0.4rem 1.5rem; font-size: 0.9rem; border-radius: 30px;">
+                                Get Your Quote Today!
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ensure full viewport height */
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-inner,
+.carousel-item {
+    height: 100vh; /* Set carousel and items to full height of viewport */
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem; /* Adjust as needed */
+}
+</style>
+
+<!-- Carousel End -->
+
+
+<!-- About Start -->
+<div class="container-fluid py-5" style="background: -webkit-linear-gradient(135deg, #ffffff 0%, #f7f7f7 100%); background: linear-gradient(135deg, #ffffff 0%, #f7f7f7 100%);">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay=".3s">
+                <div class="about-img">
+                    <div class="rotate-left bg-dark"></div>
+                    <div class="rotate-right bg-dark"></div>
+                    <img src="img/Gallery/f.jpeg" class="img-fluid h-100" alt="About Us">
+                    <div class="bg-white experiences">
+                        <h1 class="display-3 text-danger">5</h1>
+                        <h6 class="fw-bold">Years Of Experience</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay=".6s">
+                <div class="about-item overflow-hidden">
+                    <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-danger">About Anti-Bugs Pest Management</h5>
+                    <h1 class="display-5 mb-2 text-dark">Anti-Bugs Pest Management Since 2020</h1>
+                    <p class="fs-5 text-dark" style="text-align: justify;">At Anti-Bugs Pest Management, we pride ourselves on delivering exceptional pest control solutions that fit your budget. With over 5 years of experience, our dedicated team is committed to ensuring your home and business remain pest-free. We use effective and safe methods tailored to your needs, making pest management hassle-free.</p>
+                    <div class="row">
+                        <div class="col-6 col-md-3 mb-3">
+                            <div class="text-center">
+                                <div class="p-4 bg-danger rounded d-flex" style="align-items: center; justify-content: center;">
+                                    <i class="fas fa-city fa-4x text-dark"></i>
+                                </div>
+                                <div class="my-2 text-dark">
+                                    <h5>Residential</h5>
+                                    <h5>Pest Control</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 mb-3">
+                            <div class="text-center">
+                                <div class="p-4 bg-danger rounded d-flex" style="align-items: center; justify-content: center;">
+                                    <i class="fas fa-briefcase fa-4x text-dark"></i>
+                                </div>
+                                <div class="my-2 text-dark">
+                                    <h5>Commercial</h5>
+                                    <h5>Pest Control</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 mb-3">
+                            <div class="text-center">
+                                <div class="p-4 bg-danger rounded d-flex" style="align-items: center; justify-content: center;">
+                                    <i class="fas fa-bug fa-4x text-dark"></i>
+                                </div>
+                                <div class="my-2 text-dark">
+                                    <h5>Termite</h5>
+                                    <h5>Extermination</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 mb-3">
+                            <div class="text-center">
+                                <div class="p-4 bg-danger rounded d-flex" style="align-items: center; justify-content: center;">
+                                    <i class="fas fa-user-shield fa-4x text-dark"></i>
+                                </div>
+                                <div class="my-2 text-dark">
+                                    <h5>Expert</h5>
+                                    <h5>Advice</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-danger border-0 rounded-pill px-4 py-3 mt-5" onclick="window.location.href='service.html'">Find Services</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+<style>
+    .about-image {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    /* Safari-specific fix */
+    @supports (-webkit-overflow-scrolling: touch) {
+        .about-image {
+            max-height: 300px; /* Reduce height specifically for Safari */
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    /* Additional universal fallback for cases where object-fit is unsupported */
+    .about-img {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+
+     <!-- Services Start -->
+<div class="container-fluid services py-5" style="background-color: #000000;">
+    <div class="container text-center py-5">
+        <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
+            <h5 class="mb-2 px-3 py-1 rounded-pill d-inline-block border border-2" style="border-color: #3b3a3a; color: #000000;">
+                Our Services
+            </h5>
+            <h1 class="display-5" style="color: #000000;">Common Anti-Bugs Pest Management Services</h1>
+        </div>
+
+        <div class="row g-5 d-flex">
+            <!-- Service Item 1 -->
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
+                <div class="bg-light rounded p-5 h-100 services-item" style="border: 1px solid #ef0c0c;">
+                    <div class="d-flex" style="align-items: center; justify-content: center;">
+                        <div class="service-gif mb-3">
+                            <img src="img/spider.jpg" alt="Spiders" class="img-fluid rounded-circle">
+                        </div>
+                    </div>
+                    <h4 style="color: #000000;">Spiders</h4>
+                    <p class="fs-5" style="color: #666666;">Effective control methods for various spider species.</p>
+                    <a href="spiders.html" class="btn btn-danger border-0 rounded-pill px-4 py-3">Learn More</a>
+                </div>
+            </div>
+            <!-- Service Item 2 -->
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".5s">
+                <div class="bg-light rounded p-5 h-100 services-item" style="border: 1px solid #ef0c0c;">
+                    <div class="d-flex" style="align-items: center; justify-content: center;">
+                        <div class="service-gif mb-3">
+                            <img src="img/mosquito.jpg" alt="Mosquitos" class="img-fluid rounded-circle">
+                        </div>
+                    </div>
+                    <h4 style="color: #000000;">Mosquitos</h4>
+                    <p class="fs-5" style="color: #666666;">Comprehensive treatments to reduce mosquito populations.</p>
+                    <a href="mosquitos.html" class="btn btn-danger border-0 rounded-pill px-4 py-3">Learn More</a>
+                </div>
+            </div>
+            <!-- Service Item 3 -->
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".7s">
+                <div class="bg-light rounded p-5 h-100 services-item" style="border: 1px solid #ef0c0c;">
+                    <div class="d-flex" style="align-items: center; justify-content: center;">
+                        <div class="service-gif mb-3">
+                            <img src="img/rodents.jpg" alt="Rodents" class="img-fluid rounded-circle">
+                        </div>
+                    </div>
+                    <h4 style="color: #000000;">Rodents</h4>
+                    <p class="fs-5" style="color: #666666;">Safe and effective rodent control solutions.</p>
+                    <a href="rodents.html" class="btn btn-danger border-0 rounded-pill px-4 py-3">Learn More</a>
+                </div>
+            </div>
+            <!-- Service Item 4 -->
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.1s">
+                <div class="bg-light rounded p-5 h-100 services-item" style="border: 1px solid #ef0c0c;">
+                    <div class="d-flex" style="align-items: center; justify-content: center;">
+                        <div class="service-gif mb-3">
+                            <img src="img/beeswasp.jpg" alt="Bees & Wasps" class="img-fluid rounded-circle">
+                        </div>
+                    </div>
+                    <h4 style="color: #0e0e0e;">Bees & Wasps</h4>
+                    <p class="fs-5" style="color: #666666;">Safe removal and control of bees and wasps from your property.</p>
+                    <a href="Bees & Wasps.html" class="btn btn-danger border-0 rounded-pill px-4 py-3">Learn More</a>
+                </div>
+            </div>
+            <!-- Service Item 5 -->
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.1s">
+                <div class="bg-light rounded p-5 h-100 services-item" style="border: 1px solid #ef0c0c;">
+                    <div class="d-flex" style="align-items: center; justify-content: center;">
+                        <div class="service-gif mb-3">
+                            <img src="img/cockroach.jpg" alt="Cockroaches" class="img-fluid rounded-circle">
+                        </div>
+                    </div>
+                    <h4 style="color: #000000;">Cockroaches</h4>
+                    <p class="fs-5" style="color: #666666;">Effective elimination and prevention of cockroach infestations in your home.</p>
+                    <a href="Cockroach.html" class="btn btn-danger border-0 rounded-pill px-4 py-3">Learn More</a>
+                </div>
+            </div>
+            <!-- Service Item 6 -->
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.3s">
+                <div class="bg-light rounded p-5 h-100 services-item" style="border: 1px solid #ef0c0c;">
+                    <div class="d-flex" style="align-items: center; justify-content: center;">
+                        <div class="service-gif mb-3">
+                            <img src="img/ant.webp" alt="Ants" class="img-fluid rounded-circle">
+                        </div>
+                    </div>
+                    <h4 style="color: #000000;">Ants</h4>
+                    <p class="fs-5" style="color: #666666;">Effective treatments to eliminate ants from your property.</p>
+                    <a href="ants.html" class="btn btn-danger border-0 rounded-pill px-4 py-3">Learn More</a>
+                </div>
+            </div>
+            <!-- Service Item 7 -->
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".9s">
+                <div class="bg-light rounded p-5 h-100 services-item" style="border: 1px solid #ef0c0c;">
+                    <div class="d-flex" style="align-items: center; justify-content: center;">
+                        <div class="service-gif mb-3">
+                            <img src="img/termites.jpg" alt="Termites" class="img-fluid rounded-circle">
+                        </div>
+                    </div>
+                    <h4 style="color: #000000;">Termites</h4>
+                    <p class="fs-5" style="color: #666666;">Specialized treatments for termite infestations.</p>
+                    <a href="Termites.html" class="btn btn-danger border-0 rounded-pill px-4 py-3">Learn More</a>
+                </div>
+            </div>
+            <!-- Service Item 8 -->
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.5s">
+                <div class="bg-light rounded p-5 h-100 services-item" style="border: 1px solid #ef0c0c;">
+                    <div class="d-flex" style="align-items: center; justify-content: center;">
+                        <div class="service-gif mb-3">
+                            <img src="img/Bedbug.jpg" alt="Bed Bugs" class="img-fluid rounded-circle">
+                        </div>
+                    </div>
+                    <h4 style="color: #000000;">Bed Bugs</h4>
+                    <p class="fs-5" style="color: #666666;">Comprehensive treatments to eliminate bed bugs from your home.</p>
+                    <a href="bedbugs.html" class="btn btn-danger border-0 rounded-pill px-4 py-3">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+
+
+
+
+<!-- CSS for Uniform Service Sizes and Loading Effect -->
+<style>
+    /* Ensure all service items are the same size */
+    .services-item {
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #ffffff;
+    }
+
+    /* Loading screen styling */
+    #loadingScreen {
+        display: none; /* Hidden by default */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9999;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #loadingScreen img {
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<!-- Loading Screen -->
+<div id="loadingScreen">
+    <img src="img/spider1.gif" alt="Loading...">
+</div>
+
+<!-- JavaScript for Loading Effect -->
+<script>
+    // Show loading screen on page load
+    document.addEventListener("DOMContentLoaded", function() {
+        const loadingScreen = document.getElementById('loadingScreen');
+        loadingScreen.style.display = 'flex';
+        setTimeout(() => loadingScreen.style.display = 'none', 1500); // Hide after 1.5 seconds
+    });
+
+    // Show loading screen on page navigation
+    document.querySelectorAll('a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            if (this.href && this.href !== '#' && this.href !== window.location.href) {
+                const loadingScreen = document.getElementById('loadingScreen');
+                loadingScreen.style.display = 'flex';
+            }
+        });
+    });
+</script>
+
+
+
+
+
+        <!-- Call To Action Start -->
+        <div class="container-fluid py-5 call-to-action wow fadeInUp" data-wow-delay=".3s" style="margin: 6rem 0;">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <img src="img/action.jpg" class="img-fluid w-100 rounded-circle p-5" alt="">
+                    </div>
+                    <div class="col-lg-6 my-auto">
+                        <div class="text-start mt-4">
+                            <h1 class="pb-4 text-white">Sign Up To Our Newsletter To Get The Latest Offers</h1>
+                        </div>
+                        <form method="post" action="index.html">
+                            <div class="form-group">
+                                <div class="d-flex call-btn">
+                                    <input type="search" class="form-control py-3 px-4 w-100 border-0 rounded-0 rounded-end rounded-pill" name="search-input" value="" placeholder="Enter Your Email Address" required="Please enter a valid email"/>
+                                    <button type="email" value="Search Now!" class="btn border-0 rounded-pill rounded-start px-5" style="background-color: red; color: white;">
+                                        Subscribe
+                                    </button>
+                                    
+                                </div>
+                            </div>
+                        </form>  
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!-- Call To Action End -->
+
+
+
+
+        <!-- Testiminial Start -->
+      
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay=".3s">
+            <div class="container py-5">
+                <div class="row g-4 footer-inner">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-white fw-bold mb-4">About Anti-Bugs Pest Management Services.</h4>
+                            <p>Anti-Bugs Pest Management Services provides effective and budget-friendly pest control solutions across Australia. Our expert team specializes in residential and commercial pest management, including termite inspections and eco-friendly treatments.
+
+                                Committed to customer satisfaction and lasting results, we ensure a pest-free environment for your home or business. Contact us today to schedule your inspection!
+                                
+                                </p>
+                            <p class="mb-0"><a class="" href="#">Anti-Bugs Pest Management Services </a> &copy; 2023 All Right Reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-white fw-bold mb-4">Usefull Link</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a class="btn btn-link ps-0" href="about.html"><i class="fa fa-check me-2"></i>About Us</a>
+                                <a class="btn btn-link ps-0" href="contact.html"><i class="fa fa-check me-2"></i>Contact Us</a>
+                                <a class="btn btn-link ps-0" href="service.html"><i class="fa fa-check me-2"></i>Our Services</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-white fw-bold mb-4">Services Link</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>General Pest Control Spray</a>
+                                <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>German cockroaches treatment</a>
+                                <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Roof Fumigation</a>
+                                <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Bedbugs Treatment</a>
+                                <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Rat and Mouse Treatment</a>
+                                <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>End of lease Flea Treatment</a>
+                                <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Commercial Pest Control</a>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-white fw-bold mb-4">Contact Us</h4>
+                            <a href="" class="btn btn-link w-100 text-start ps-0 pb-3 border-bottom rounded-0"><i class="fa fa-map-marker-alt me-3"></i>160 McFarlane Drive Minchinbury NSW 2770</a>
+                            <a href="" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-phone-alt me-3"></i>0434193057</a>
+    <a href="mailto:info@antibugspestmanagement.com.au" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0 d-flex align-items-center">
+                                <i class="fa fa-envelope me-2"></i>info@antibugspestmanagement.com.au
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                        <a href="index.html" class="navbar-brand">
+                             <img src="img/logo11.png" alt="Spider Logo" class="ms-2" style="width: 350px; height: 70px;">
+                          
+                        </a>
+                    </div>
+         
+        
+                    <div class="col-md-4 copyright-btn text-center text-md-start mb-3 mb-md-0 flex-shrink-0">
+                        <!-- Updated buttons with black and red theme -->
+                        <a class="btn btn-dark rounded-circle me-3 copyright-icon" href="" style="color: #ef0c0c;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="btn btn-dark rounded-circle me-3 copyright-icon" href="" style="color: #ef0c0c;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-dark rounded-circle me-3 copyright-icon" href="" style="color: #ef0c0c;">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a class="btn btn-dark rounded-circle me-3 copyright-icon" href="" style="color: #ef0c0c;">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-4 my-auto text-center text-md-end text-dark">
+                        <!-- Updated text color to black -->
+                        Designed By <a class="border-bottom text-danger" href="https://webinorbit.com">WebInOrbit</a>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+        
+
+       <!-- Back to Top -->
+<a href="#" class="btn rounded-circle back-to-top">
+    <i class="fa fa-arrow-up"></i>
+</a>
+<style>
+    .back-to-top {
+    background-color: #000000;  /* Black background */
+    border: 2px solid #ef0c0c;  /* Red border */
+    color: #ef0c0c;              /* Red arrow color */
+}
+
+.back-to-top i {
+    color: #ef0c0c;              /* Ensure the icon is red */
+}
+
+</style>
+
+</style>
+
+<!-- CSS for Uniform Service Sizes and Loading Effect -->
+<style>
+    /* Ensure all service items are the same size */
+    .services-item {
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* Loading screen styling */
+    #loadingScreen {
+        display: none; /* Hidden by default */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9999;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #loadingScreen img {
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<!-- Loading Screen -->
+<div id="loadingScreen">
+    <img src="img/spider1.gif" alt="Loading...">
+</div>
+
+<!-- JavaScript for Loading Effect -->
+<script>
+    // Show loading screen on page load
+    document.addEventListener("DOMContentLoaded", function() {
+        const loadingScreen = document.getElementById('loadingScreen');
+        loadingScreen.style.display = 'flex';
+        setTimeout(() => loadingScreen.style.display = 'none', 1500); // Hide after 1.5 seconds
+    });
+
+    // Show loading screen on page navigation
+    document.querySelectorAll('a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            if (this.href && this.href !== '#' && this.href !== window.location.href) {
+                const loadingScreen = document.getElementById('loadingScreen');
+                loadingScreen.style.display = 'flex';
+            }
+        });
+    });
+</script>
+
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
