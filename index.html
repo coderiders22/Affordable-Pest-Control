@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title>Anti-Bugs Pest Management</title>
+        
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -37,6 +38,7 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        
     </head>
 
     <body>
@@ -48,11 +50,11 @@
 
 
 <!-- Navbar Start -->
+<!-- Navbar Start -->
 <div class="container-fluid bg-white">
     <div class="container">
         <nav class="navbar navbar-light navbar-expand-lg py-lg-0">
             <a href="index.html" class="navbar-brand d-flex align-items-center">
-              
                 <img src="img/logo11.png" alt="Spider Logo" class="ms-2" style="width: 350px; height: 70px;">
             </a>
             <button class="navbar-toggler custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,6 +65,47 @@
                     <a href="index.html" class="nav-item nav-link text-dark active">Home</a>
                     <a href="about.html" class="nav-item nav-link text-dark">About</a>
                     <a href="service.html" class="nav-item nav-link text-dark">Services</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-dark" id="navbarDropdown" role="button">
+                            Pest Solutions
+                        </a>
+                        <div class="custom-dropdown" aria-labelledby="navbarDropdown">
+                            <a href="#" class="dropdown-item">Ants</a>
+                            <a href="#" class="dropdown-item">Armyworms</a>
+                            <a href="#" class="dropdown-item">Bed Bugs</a>
+                            <a href="#" class="dropdown-item">Bees</a>
+                            <a href="#" class="dropdown-item">Beetles</a>
+                            <a href="#" class="dropdown-item">Birds</a>
+                            <a href="#" class="dropdown-item">Borers</a>
+                            <a href="#" class="dropdown-item">Caterpillars</a>
+                            <a href="#" class="dropdown-item">Cockroaches</a>
+                            <a href="#" class="dropdown-item">Crickets</a>
+                            <a href="#" class="dropdown-item">Earwigs</a>
+                            <a href="#" class="dropdown-item">European Wasps</a>
+                            <a href="#" class="dropdown-item">Feral Cats</a>
+                            <a href="#" class="dropdown-item">Fire Ants</a>
+                            <a href="#" class="dropdown-item">Fleas</a>
+                            <a href="#" class="dropdown-item">Flies</a>
+                            <a href="#" class="dropdown-item">Lice</a>
+                            <a href="#" class="dropdown-item">Mice</a>
+                            <a href="#" class="dropdown-item">Millipedes</a>
+                            <a href="#" class="dropdown-item">Mosquitoes</a>
+                            <a href="#" class="dropdown-item">Moths</a>
+                            <a href="#" class="dropdown-item">Possums</a>
+                            <a href="#" class="dropdown-item">Rats</a>
+                            <a href="#" class="dropdown-item">Rodents</a>
+                            <a href="#" class="dropdown-item">Scorpions</a>
+                            <a href="#" class="dropdown-item">Silverfish</a>
+                            <a href="#" class="dropdown-item">Slaters</a>
+                            <a href="#" class="dropdown-item">Snakes</a>
+                            <a href="#" class="dropdown-item">Spiders</a>
+                            <a href="#" class="dropdown-item">Stored Product Pests</a>
+                            <a href="#" class="dropdown-item">Termites</a>
+                            <a href="#" class="dropdown-item">Ticks</a>
+                            <a href="#" class="dropdown-item">Wasps</a>
+                            <a href="#" class="dropdown-item">Wild Rabbits</a>
+                        </div>
+                    </div>
                     <a href="gallery.html" class="nav-item nav-link text-dark">Gallery</a>
                     <a href="contact.html" class="nav-item nav-link custom-button text-dark">Contact</a>
                 </div>
@@ -70,7 +113,6 @@
                 <div class="d-none d-lg-flex align-items-center ms-4">
                     <span class="d-inline-block text-dark me-3"><i class="fa fa-phone-alt"></i>0434193057</span>
                     <span class="d-inline-block text-dark me-3"><i class="fa fa-envelope"></i> info@antibugspestmanagement.com.au</span>
- 
                 </div>
                 <!-- Contact Info Section End -->
             </div>
@@ -78,9 +120,11 @@
     </div>
 </div>
 <!-- Navbar End -->
+<!-- Navbar End -->
 
 
 <style>
+    
     /* Hover Effect: Turn Navbar Links Red */
     .navbar .nav-link:hover {
         color: red !important;
@@ -90,6 +134,64 @@
     .navbar .nav-link.active {
         color: red !important;
     }
+    /* Dropdown Styling */
+    .custom-dropdown {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* Create four columns */
+            gap: 8px; /* Spacing between columns */
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 600px;
+            max-width: 1000%;
+            position: absolute;
+            top: 100%;
+            display: none; /* Hide by default */
+            z-index: 1000;
+            
+        }
+
+        .dropdown-item {
+            color: #333;
+            font-size: 14px;
+            text-decoration: none;
+            padding: 8px;
+            display: block;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            text-align: center;
+            transition: background-color 0.2s;
+            border: 1px solid #ddd; /* Optional: Add a subtle border */
+        }
+
+        .dropdown-item:hover {
+            background-color: #f1f1f1;
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        /* Show dropdown on hover */
+        .nav-item.dropdown:hover .custom-dropdown {
+            display: grid;
+        }
+
+        /* Navbar Custom Button */
+        .custom-button {
+            color: #333;
+            font-weight: bold;
+            border: 1px solid red;
+            padding: 8px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        
+        .custom-button:hover {
+            background-color: red;
+            color: #fff;
+        }
+
 </style>
 
 <script>
