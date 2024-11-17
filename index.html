@@ -55,7 +55,7 @@
     <div class="container">
         <nav class="navbar navbar-light navbar-expand-lg py-lg-0">
             <a href="index.html" class="navbar-brand d-flex align-items-center">
-                <img src="img/logo11.png" alt="Spider Logo" class="ms-2" style="width: 350px; height: 70px;">
+                <img src="img/logo11.png" alt="Spider Logo" class="ms-2" style="width: 245px; height: 50px;">
             </a>
             <button class="navbar-toggler custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="fa fa-bars text-dark"></span>
@@ -66,46 +66,192 @@
                     <a href="about.html" class="nav-item nav-link text-dark">About</a>
                     <a href="service.html" class="nav-item nav-link text-dark">Services</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle text-dark" id="navbarDropdown" role="button">
+                        <a href="" class="nav-link dropdown-toggle text-dark" id="navbarDropdown" role="button" onclick="toggleDropdown(event)">
                             Pest Solutions
                         </a>
-                        <div class="custom-dropdown" aria-labelledby="navbarDropdown">
-                            <a href="#" class="dropdown-item">Ants</a>
-                            <a href="#" class="dropdown-item">Armyworms</a>
-                            <a href="#" class="dropdown-item">Bed Bugs</a>
-                            <a href="#" class="dropdown-item">Bees</a>
-                            <a href="#" class="dropdown-item">Beetles</a>
-                            <a href="#" class="dropdown-item">Birds</a>
-                            <a href="#" class="dropdown-item">Borers</a>
-                            <a href="#" class="dropdown-item">Caterpillars</a>
-                            <a href="#" class="dropdown-item">Cockroaches</a>
-                            <a href="#" class="dropdown-item">Crickets</a>
-                            <a href="#" class="dropdown-item">Earwigs</a>
-                            <a href="#" class="dropdown-item">European Wasps</a>
-                            <a href="#" class="dropdown-item">Feral Cats</a>
-                            <a href="#" class="dropdown-item">Fire Ants</a>
-                            <a href="#" class="dropdown-item">Fleas</a>
-                            <a href="#" class="dropdown-item">Flies</a>
-                            <a href="#" class="dropdown-item">Lice</a>
-                            <a href="#" class="dropdown-item">Mice</a>
-                            <a href="#" class="dropdown-item">Millipedes</a>
-                            <a href="#" class="dropdown-item">Mosquitoes</a>
-                            <a href="#" class="dropdown-item">Moths</a>
-                            <a href="#" class="dropdown-item">Possums</a>
-                            <a href="#" class="dropdown-item">Rats</a>
-                            <a href="#" class="dropdown-item">Rodents</a>
-                            <a href="#" class="dropdown-item">Scorpions</a>
-                            <a href="#" class="dropdown-item">Silverfish</a>
-                            <a href="#" class="dropdown-item">Slaters</a>
-                            <a href="#" class="dropdown-item">Snakes</a>
-                            <a href="#" class="dropdown-item">Spiders</a>
-                            <a href="#" class="dropdown-item">Stored Product Pests</a>
-                            <a href="#" class="dropdown-item">Termites</a>
-                            <a href="#" class="dropdown-item">Ticks</a>
-                            <a href="#" class="dropdown-item">Wasps</a>
-                            <a href="#" class="dropdown-item">Wild Rabbits</a>
+                        <div class="custom-dropdown" id="dropdownMenu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-grid">
+                                <a href="contact.html" class="dropdown-item">Ants</a>
+                                <a href="contact.html" class="dropdown-item">Armyworms</a>
+                                <a href="contact.html" class="dropdown-item">Bed Bugs</a>
+                                <a href="contact.html" class="dropdown-item">Bees</a>
+                                <a href="contact.html" class="dropdown-item">Beetles</a>
+                                <a href="contact.html" class="dropdown-item">Birds</a>
+                                <a href="contact.html" class="dropdown-item">Borers</a>
+                                <a href="contact.html" class="dropdown-item">Caterpillars</a>
+                                <a href="contact.html" class="dropdown-item">Cockroaches</a>
+                                <a href="contact.html" class="dropdown-item">Crickets</a>
+                                <a href="contact.html" class="dropdown-item">Earwigs</a>
+                                <a href="contact.html" class="dropdown-item">European<br> Wasps</a>
+                                <a href="contact.html" class="dropdown-item">Feral Cats</a>
+                                <a href="contact.html" class="dropdown-item">Fire Ants</a>
+                                <a href="contact.html" class="dropdown-item">Fleas</a>
+                                <a href="contact.html" class="dropdown-item">Flies</a>
+                                <a href="contact.html" class="dropdown-item">Lice</a>
+                                <a href="contact.html" class="dropdown-item">Mice</a>
+                                <a href="contact.html" class="dropdown-item">Millipedes</a>
+                                <a href="contact.html" class="dropdown-item">Mosquitoes</a>
+                                <a href="contact.html" class="dropdown-item">Moths</a>
+                                <a href="contact.html" class="dropdown-item">Possums</a>
+                                <a href="contact.html" class="dropdown-item">Rats</a>
+                                <a href="contact.html" class="dropdown-item">Rodents</a>
+                                <a href="contact.html" class="dropdown-item">Scorpions</a>
+                                <a href="contact.html" class="dropdown-item">Silverfish</a>
+                                <a href="contact.html" class="dropdown-item">Slaters</a>
+                                <a href="contact.html" class="dropdown-item">Snakes</a>
+                                <a href="contact.html" class="dropdown-item">Spiders</a>
+                                <a href="contact.html" class="dropdown-item">Stored Product <br> Pests</a>
+                                <a href="contact.html" class="dropdown-item">Termites</a>
+                                <a href="contact.html" class="dropdown-item">Ticks</a>
+                                <a href="contact.html" class="dropdown-item">Wasps</a>
+                                <a href="contact.html" class="dropdown-item">Wild Rabbits</a>
+                            </div>
                         </div>
                     </div>
+                    
+                    <script>
+function toggleDropdown(event) {
+    event.preventDefault(); // Prevents the link from navigating
+    const dropdownMenu = document.getElementById("dropdownMenu");
+
+    // Check if the dropdown is already shown, then toggle it
+    if (dropdownMenu.classList.contains("show")) {
+        dropdownMenu.classList.remove("show");
+    } else {
+        dropdownMenu.classList.add("show");
+    }
+}
+
+// Close the dropdown when clicking outside of it
+document.addEventListener("click", function (event) {
+    const dropdownMenu = document.getElementById("dropdownMenu");
+    const dropdownToggle = document.getElementById("navbarDropdown");
+
+    if (
+        !dropdownMenu.contains(event.target) &&
+        !dropdownToggle.contains(event.target)
+    ) {
+        dropdownMenu.classList.remove("show");
+    }
+});
+function toggleDropdown(event) {
+    event.preventDefault(); // Prevent default anchor behavior
+    const dropdownMenu = document.getElementById('dropdownMenu');
+    dropdownMenu.classList.toggle('show');
+}
+
+
+                    </script>
+                 <style>
+                    /* Base styles for dropdown */
+                    .custom-dropdown {
+                        display: none;
+                        position: absolute;
+                        background-color: white;
+                        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                        width: 600px; /* Adjusted width for multi-column layout */
+                        z-index: 1000;
+                        padding: 1.5rem;
+                        overflow: hidden;
+                        border-radius: 12px;
+                        transition: transform 0.3s ease, opacity 0.3s ease;
+                        transform: translateY(-10px);
+                        opacity: 0;
+                    }
+                    
+                    /* Show dropdown when "show" class is added */
+                    .custom-dropdown.show {
+                        display: block;
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                    
+                    /* Grid layout for dropdown items */
+                    .custom-dropdown .dropdown-grid {
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr); /* Default 3 columns for larger screens */
+                        gap: 15px;
+                        padding: 0;  /* Remove padding around grid */
+                    }
+                    
+                    /* Dropdown items with underline effect */
+                    .custom-dropdown .dropdown-item {
+                        padding: 12px;
+                        font-size: 1rem;
+                        color: #333;
+                        text-align: left;
+                        position: relative;
+                        transition: all 0.3s ease;
+                        cursor: pointer;
+                        border-radius: 8px; /* Rounded corners */
+                        border: 1px solid #f0f0f0; /* Light border for separation */
+                        background-color: #f9f9f9; /* Light background for each item */
+                    }
+                    
+                    /* Underline effect */
+                    .custom-dropdown .dropdown-item::after {
+                        content: "";
+                        display: block;
+                        width: 0%;
+                        height: 2px;
+                        background-color: #007bff;
+                        transition: width 0.3s ease;
+                        margin-top: 6px;
+                    }
+                    
+                    /* Hover effect for dropdown items */
+                    .custom-dropdown .dropdown-item:hover {
+                        background-color: #e9f5ff; /* Light blue background on hover */
+                        color: #007bff; /* Change text color */
+                    }
+                    
+                    .custom-dropdown .dropdown-item:hover::after {
+                        width: 100%;
+                    }
+                    
+                    /* Styling for larger screens */
+                    @media (min-width: 769px) {
+                        .custom-dropdown {
+                            width: 600px;
+                            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+                            border: 1px solid #9d0f0f;
+                        }
+                    
+                        .dropdown-item {
+                            background-color: #ffffff; /* White background for items */
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Add a shadow effect */
+                        }
+                    
+                        .dropdown-item:hover {
+                            background-color: #f0f0f0; /* Light grey background on hover */
+                        }
+                    }
+                    
+                    /* Mobile adjustments */
+                    @media (max-width: 768px) {
+    .nav-item.dropdown {
+        width: 100%;
+    }
+
+    .custom-dropdown {
+        position:relative;
+        width: 100%;
+        max-width: none;
+        border-radius: 0;
+        padding: 1rem;
+        max-height: 40vh; /* Limits height and makes it scrollable */
+        overflow-y: auto;
+    }
+
+    .dropdown-item {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}        
+                    </style>
+                    
+                    
+                    
                     <a href="gallery.html" class="nav-item nav-link text-dark">Gallery</a>
                     <a href="contact.html" class="nav-item nav-link custom-button text-dark">Contact</a>
                 </div>
@@ -134,63 +280,7 @@
     .navbar .nav-link.active {
         color: red !important;
     }
-    /* Dropdown Styling */
-    .custom-dropdown {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr); /* Create four columns */
-            gap: 8px; /* Spacing between columns */
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            width: 600px;
-            max-width: 1000%;
-            position: absolute;
-            top: 100%;
-            display: none; /* Hide by default */
-            z-index: 1000;
-            
-        }
-
-        .dropdown-item {
-            color: #333;
-            font-size: 14px;
-            text-decoration: none;
-            padding: 8px;
-            display: block;
-            background-color: #f9f9f9;
-            border-radius: 4px;
-            text-align: center;
-            transition: background-color 0.2s;
-            border: 1px solid #ddd; /* Optional: Add a subtle border */
-        }
-
-        .dropdown-item:hover {
-            background-color: #f1f1f1;
-            color: #0056b3;
-            text-decoration: none;
-        }
-
-        /* Show dropdown on hover */
-        .nav-item.dropdown:hover .custom-dropdown {
-            display: grid;
-        }
-
-        /* Navbar Custom Button */
-        .custom-button {
-            color: #333;
-            font-weight: bold;
-            border: 1px solid red;
-            padding: 8px 12px;
-            border-radius: 4px;
-            text-decoration: none;
-        }
-        
-        .custom-button:hover {
-            background-color: red;
-            color: #fff;
-        }
+    
 
 </style>
 
