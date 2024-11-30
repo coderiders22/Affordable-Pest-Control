@@ -63,6 +63,7 @@
                     <a href="index.html" class="nav-item nav-link text-dark">Home</a>
                     <a href="about.html" class="nav-item nav-link text-dark">About</a>
                     <a href="service.html" class="nav-item nav-link text-dark">Services</a>
+                    
                     <a href="gallery.html" class="nav-item nav-link text-dark">Gallery</a>
                     <a href="contact.html" class="nav-item nav-link custom-button text-dark active">Contact</a>
                 </div>
@@ -118,80 +119,118 @@
 
 
        <!-- Contact Start -->
-<div class="container-fluid py-5 bg-white text-dark">
-    <div class="container py-5">
-        <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
-            <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-danger">Get In Touch</h5>
-            <h1 class="display-5 w-50 mx-auto text-danger">Contact for Any Query</h1>
-        </div>
-        <div class="row g-5 mb-5">
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                <div class="h-100">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65353985.06650161!2d64.12469830000009!3d-1.2355403583201332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129a77c78cfc13%3A0xd3a019e57f63cdef!2s160%20McFarlane%20Dr%2C%20Minchinbury%20NSW%202770%2C%20Australia!5e0!3m2!1sen!2sin!4v1730928675691!5m2!1sen!2sin" class="border-0 rounded w-100 h-100" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+       <div class="container-fluid py-5 bg-white text-dark">
+        <div class="container py-5">
+            <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
+                <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-danger">Get In Touch</h5>
+                <h1 class="display-5 w-50 mx-auto text-danger">Contact for Any Query</h1>
             </div>
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                <p class="mb-4">The contact form is currently inactive.</p>
-                <div class="rounded contact-form bg-light text-dark p-4">
-                    <div class="mb-4">
-                        <input type="text" class="form-control p-3 border-0" placeholder="Your Name">
+            <div class="row g-5 mb-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="h-100">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65353985.06650161!2d64.12469830000009!3d-1.2355403583201332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129a77c78cfc13%3A0xd3a019e57f63cdef!2s160%20McFarlane%20Dr%2C%20Minchinbury%20NSW%202770%2C%20Australia!5e0!3m2!1sen!2sin!4v1730928675691!5m2!1sen!2sin" class="border-0 rounded w-100 h-100" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div class="mb-4">
-                        <input type="email" class="form-control p-3 border-0" placeholder="Your Email">
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
+                    <p class="mb-4">The contact form is currently inactive.</p>
+                    <div class="rounded contact-form bg-light text-dark p-4">
+                        <form name="submit-to-google-sheet">
+                            <div class="mb-4">
+                                <input type="text" class="form-control p-3 border-0" placeholder="Your Name" name="Name" required>
+                            </div>
+                            <div class="mb-4">
+                                <input type="email" class="form-control p-3 border-0" placeholder="Your Email" name="Email" required>
+                            </div>
+                            <div class="mb-4">
+                                <select class="form-select p-3 border-0" name="Type of Service" required>
+                                    <option value="Type Of Service">Type Of Service</option>
+                                    <option value="Ants">Ants</option>
+                                    <option value="Armyworms">Armyworms</option>
+                                    <option value="Bed Bugs">Bed Bugs</option>
+                                    <option value="Bees">Bees</option>
+                                    <option value="Beetles">Beetles</option>
+                                    <option value="Birds">Birds</option>
+                                    <option value="Borers">Borers</option>
+                                    <option value="Caterpillars">Caterpillars</option>
+                                    <option value="Cockroaches">Cockroaches</option>
+                                    <option value="Crickets">Crickets</option>
+                                    <option value="Earwigs">Earwigs</option>
+                                    <option value="European Wasps">European Wasps</option>
+                                    <option value="Feral Cats">Feral Cats</option>
+                                    <option value="Fire Ants">Fire Ants</option>
+                                    <option value="Fleas">Fleas</option>
+                                    <option value="Flies">Flies</option>
+                                    <option value="Lice">Lice</option>
+                                    <option value="Mice">Mice</option>
+                                    <option value="Millipedes">Millipedes</option>
+                                    <option value="Mosquitoes">Mosquitoes</option>
+                                    <option value="Moths">Moths</option>
+                                    <option value="Possums">Possums</option>
+                                    <option value="Rats">Rats</option>
+                                    <option value="Rodents">Rodents</option>
+                                    <option value="Scorpions">Scorpions</option>
+                                    <option value="Silverfish">Silverfish</option>
+                                    <option value="Slaters">Slaters</option>
+                                    <option value="Snakes">Snakes</option>
+                                    <option value="Spiders">Spiders</option>
+                                    <option value="Stored Product Pests">Stored Product Pests</option>
+                                    <option value="Termites">Termites</option>
+                                    <option value="Ticks">Ticks</option>
+                                    <option value="Wasps">Wasps</option>
+                                    <option value="Wild Rabbits">Wild Rabbits</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <input type="text" class="form-control p-3 border-0" placeholder="Subject" name="Subject" required>
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-control p-3 border-0" rows="6" placeholder="Message" name="Message" required></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-control p-3 border-0" rows="6" placeholder="Address" name="Address" required></textarea>
+                            </div>
+                            <button class="btn btn-danger border-0 py-3 px-4 rounded-pill" type="submit">Send Message</button>
+                            
+                        </form>
                     </div>
-                    <div class="mb-4">
-                        <select class="form-select p-3 border-0">
-                            <option value="Type Of Service">Type Of Service</option>
-                            <option value="Ants">Ants</option>
-                            <option value="Armyworms">Armyworms</option>
-                            <option value="Bed Bugs">Bed Bugs</option>
-                            <option value="Bees">Bees</option>
-                            <option value="Beetles">Beetles</option>
-                            <option value="Birds">Birds</option>
-                            <option value="Borers">Borers</option>
-                            <option value="Caterpillars">Caterpillars</option>
-                            <option value="Cockroaches">Cockroaches</option>
-                            <option value="Crickets">Crickets</option>
-                            <option value="Earwigs">Earwigs</option>
-                            <option value="European Wasps">European Wasps</option>
-                            <option value="Feral Cats">Feral Cats</option>
-                            <option value="Fire Ants">Fire Ants</option>
-                            <option value="Fleas">Fleas</option>
-                            <option value="Flies">Flies</option>
-                            <option value="Lice">Lice</option>
-                            <option value="Mice">Mice</option>
-                            <option value="Millipedes">Millipedes</option>
-                            <option value="Mosquitoes">Mosquitoes</option>
-                            <option value="Moths">Moths</option>
-                            <option value="Possums">Possums</option>
-                            <option value="Rats">Rats</option>
-                            <option value="Rodents">Rodents</option>
-                            <option value="Scorpions">Scorpions</option>
-                            <option value="Silverfish">Silverfish</option>
-                            <option value="Slaters">Slaters</option>
-                            <option value="Snakes">Snakes</option>
-                            <option value="Spiders">Spiders</option>
-                            <option value="Stored Product Pests">Stored Product Pests</option>
-                            <option value="Termites">Termites</option>
-                            <option value="Ticks">Ticks</option>
-                            <option value="Wasps">Wasps</option>
-                            <option value="Wild Rabbits">Wild Rabbits</option>
-                        </select>
-                    </div>
+                    <script>
+                        const scriptURL = "https://script.google.com/macros/s/AKfycbzEzBgrRIsRFg5fiXyQzdObna8hGZrT1BXo49ONcKqBoBk_DNpQsPjabuidj4AIoZQ/exec";
+                        const form = document.forms["submit-to-google-sheet"];
                     
-                    <div class="mb-4">
-                        <input type="text" class="form-control p-3 border-0" placeholder="Subject">
-                    </div>
-                    <div class="mb-4">
-                        <textarea class="form-control p-3 border-0" rows="6" placeholder="Message"></textarea>
-                    </div>
-                    <div class="mb-4">
-                        <textarea class="form-control p-3 border-0" rows="6" placeholder="Address"></textarea>
-                    </div>
-                    <button class="btn btn-danger border-0 py-3 px-4 rounded-pill" type="button" onclick="window.location.href='contact.html'">Send Message</button>
+                        form.addEventListener("submit", (e) => {
+                            e.preventDefault();
+                    
+                            // Fetch API to send form data to Google Sheets
+                            fetch(scriptURL, { method: "POST", body: new FormData(form) })
+                                .then((response) => {
+                                    if (!response.ok) {
+                                        throw new Error(`HTTP error! Status: ${response.status}`);
+                                    }
+                                    return response.json();
+                                })
+                                .then((data) => {
+                                    if (data.result === "success") {
+                                        alert("Form submitted successfully!");
+                                        form.reset(); // Clear form fields after successful submission
+                                    } else {
+                                        alert("Error: " + data.error);
+                                        console.error("Server Error:", data.error);
+                                    }
+                                })
+                                .catch((error) => {
+                                    alert("Error submitting the form! Check the console for details.");
+                                    console.error("Error:", error);
+                                });
+                        });
+                    </script>
+                    
                 </div>
             </div>
         </div>
+    </div>
+    
+
+        
         <style>
             /* General styling for dropdown */
 .form-select {
@@ -236,19 +275,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
-                <div class="d-flex bg-light p-3 rounded contact-btn-link h-100">
-                    <div class="d-flex align-items-center justify-content-center bg-danger rounded-circle p-4 ms-4" style="width: 64px; height: 64px;">
-                        <i class="fas fa-map-marker-alt text-light"></i>
-                    </div>
-                    <div class="ms-3 contact-link">
-                        <h4 class="text-dark">Address</h4>
-                        <a href="#">
-                            <h5 class="text-dark d-inline fs-6">160 McFarlane Drive, Minchinbury NSW 2770</h5>
-                        </a>
-                    </div>
-                </div>
-            </div>
+
             <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
                 <div class="d-flex bg-light p-3 rounded contact-btn-link h-100">
                     <div class="d-flex align-items-center justify-content-center bg-danger rounded-circle p-3 ms-3" style="width: 64px; height: 64px;">
@@ -279,6 +306,12 @@
     </div>
 </div>
 <!-- Contact End -->
+
+
+
+
+
+  
 
 
         <!-- Footer Start -->
@@ -326,7 +359,6 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
                             <h4 class="text-white fw-bold mb-4">Contact Us</h4>
-                            <a href="" class="btn btn-link w-100 text-start ps-0 pb-3 border-bottom rounded-0"><i class="fa fa-map-marker-alt me-3"></i>160 McFarlane Drive Minchinbury NSW 2770</a>
                             <a href="" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-phone-alt me-3"></i>0434193057</a>
                             <a href="mailto:info@antibugspestmanagement.com.au" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0 d-flex align-items-center">
                                 <i class="fa fa-envelope me-2"></i>info@antibugspestmanagement.com.au
