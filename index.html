@@ -844,8 +844,7 @@ function toggleDropdown(event) {
                             <h1 class="pb-4 text-white">Sign Up To Our Newsletter To Get The Latest Offers</h1>
                         </div>
                         <!-- Use the Web App URL as the form action -->
-                        <form method="post" action="https://script.google.com/macros/s/AKfycbxI6fijKNg5X4Kaqkg35_G_lrnv1qK3JT5WhYoSJHGWMT4baqjt6ngKdGZr1sON_wTa/exec" onsubmit="return handleFormSubmit(event)">
-
+                        <form onsubmit="return handleFormSubmit(event)">
                             <div class="form-group">
                                 <div class="d-flex call-btn">
                                     <input type="email" class="form-control py-3 px-4 w-100 border-0 rounded-0 rounded-end rounded-pill" 
@@ -857,31 +856,49 @@ function toggleDropdown(event) {
                                     </button>
                                 </div>
                             </div>
-                        </form>  
+                        </form>
+                        
                     </div>
                 </div> 
             </div>
         </div>
         <script>
-            function handleFormSubmit(event) {
-              event.preventDefault(); // Prevent default form submission behavior
-          
-              const form = event.target;
-              const formData = new FormData(form);
-          
-              fetch(form.action, {
-                method: form.method,
-                body: new URLSearchParams(formData),
-              })
-                .then(response => response.text())
-                .then(result => {
-                  alert('Thank you for subscribing! Your email has been successfully added.');
-                
-                });
-          
-              return false; // Prevent default page reload
-            }
-          </script>
+            const handleFormSubmit = (event) => {
+                event.preventDefault(); // Prevent the default form submission behavior
+        
+                // Get the form element from the event
+                const form = event.target;
+        
+                // Define the script URL
+                const scriptURL = "https://script.google.com/macros/s/AKfycbxI6fijKNg5X4Kaqkg35_G_lrnv1qK3JT5WhYoSJHGWMT4baqjt6ngKdGZr1sON_wTa/exec";
+        
+                // Fetch API to send form data to Google Sheets
+                fetch(scriptURL, { method: "POST", body: new FormData(form) })
+                    .then((response) => {
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! Status: ${response.status}`);
+                        }
+                        return response.json();
+                    })
+                    .then((data) => {
+                        if (data.result === "success") {
+                            alert(data.sheet2Status); // Show success message for Sheet2
+                            form.reset(); // Clear form fields after successful submission
+                        } else {
+                            alert("Error: " + data.error);
+                            console.error("Server Error:", data.error);
+                        }
+                    })
+                    .catch((error) => {
+                        // The catch block now handles only fetch request errors, not form submission failures
+                        alert("Error submitting the form! Check the console for details.");
+                        console.error("Error:", error);
+                    });
+            };
+        </script>
+        
+        
+        
           
         
         <!-- Call To Action End -->
