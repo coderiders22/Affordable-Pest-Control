@@ -843,14 +843,18 @@ function toggleDropdown(event) {
                         <div class="text-start mt-4">
                             <h1 class="pb-4 text-white">Sign Up To Our Newsletter To Get The Latest Offers</h1>
                         </div>
-                        <form method="post" action="index.html">
+                        <!-- Use the Web App URL as the form action -->
+                        <form method="post" action="https://script.google.com/macros/s/AKfycbxI6fijKNg5X4Kaqkg35_G_lrnv1qK3JT5WhYoSJHGWMT4baqjt6ngKdGZr1sON_wTa/exec" onsubmit="return handleFormSubmit(event)">
+
                             <div class="form-group">
                                 <div class="d-flex call-btn">
-                                    <input type="search" class="form-control py-3 px-4 w-100 border-0 rounded-0 rounded-end rounded-pill" name="search-input" value="" placeholder="Enter Your Email Address" required="Please enter a valid email"/>
-                                    <button type="email" value="Search Now!" class="btn border-0 rounded-pill rounded-start px-5" style="background-color: red; color: white;">
+                                    <input type="email" class="form-control py-3 px-4 w-100 border-0 rounded-0 rounded-end rounded-pill" 
+                                           name="email" value="" placeholder="Enter Your Email Address" 
+                                           required="Please enter a valid email" />
+                                    <button type="submit" class="btn border-0 rounded-pill rounded-start px-5" 
+                                            style="background-color: red; color: white;">
                                         Subscribe
                                     </button>
-                                    
                                 </div>
                             </div>
                         </form>  
@@ -858,6 +862,28 @@ function toggleDropdown(event) {
                 </div> 
             </div>
         </div>
+        <script>
+            function handleFormSubmit(event) {
+              event.preventDefault(); // Prevent default form submission behavior
+          
+              const form = event.target;
+              const formData = new FormData(form);
+          
+              fetch(form.action, {
+                method: form.method,
+                body: new URLSearchParams(formData),
+              })
+                .then(response => response.text())
+                .then(result => {
+                  alert('Thank you for subscribing! Your email has been successfully added.');
+                
+                });
+          
+              return false; // Prevent default page reload
+            }
+          </script>
+          
+        
         <!-- Call To Action End -->
         <!-- Footer Start -->
         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay=".3s">
